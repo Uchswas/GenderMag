@@ -4,6 +4,7 @@ Source: GMsession1.docx.pdf
 
 gm_session_1 = {
     "scenario": "Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are.",
+    "persona" : "ABI",
     "Subgoals": [
         {
             "subgoal": "Find the Syllabus page",

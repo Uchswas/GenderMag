@@ -4,6 +4,7 @@ Source: GMsession2.docx.pdf
 
 gm_session_2 = {
     "scenario": "Ecampus CS162 student wants to figure out what to do to complete the course to be able to plan their term.",
+    "persona" : "ABI",
     "Subgoals": [
         {
             "subgoal": "Find the Syllabus page",
