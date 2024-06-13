@@ -9,9 +9,9 @@ gm_session_2 = {
         {
             "subgoal": "Find the Syllabus page",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "answers": "Yes",
-            "facets_used": ["Motivations", "Information Processing Style"],
-            "why": "They see a list of announcements and a welcome. Abi would want to scroll down to see the rest of the text to see what’s on the homepage. Abi would want to read through the information provided on the homepage. Abi would be looking for any pointers toward their main goal.",
+            "answers": "No",
+            "facets_used": ["Motivations", "Information Processing Style", 'Attitude Towards Risk', 'Learning Style'],
+            "why": "They see a list of announcements and a welcome. Abi would want to scroll down to see the rest of the text to see what’s on the homepage. Abi would want to read through the information provided on the homepage. Abi would be looking for any pointers toward their main goal. Abi has never seen an online Canvas course at OSU before, so she wouldn’t be looking for the syllabus page since that’s OSU-specific. Besides, a syllabus is usually not a source of deadlines and lists of activities.",
             "Actions": [
                 {
                     "action": "Click 'Syllabus' on the left pane",
