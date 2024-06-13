@@ -22,7 +22,7 @@ gm_session_1 = {
                         "answers": [
                             "answer1: Yes; facets: None of the above; why: Familiar with such notices across other web sites",
                             "answer2: Maybe; facets: Attitude Towards Risk; why: Why give away privacy data before really needing to do so",
-                            "answer3: No; facets: Information Processing Style and Attitude Towards Risk; why: She thinks that IEEE doesn’t need this information"
+                            "answer3: No; facets: Information Processing Style and Attitude Towards Risk; why: She thinks that IEEE doesn’t need this information She is not sure why IEEE would need this information before she does anything"
                         ],
                     },
                     "after_action": {
@@ -40,7 +40,7 @@ gm_session_1 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style; why: Familiar with such notices across other web sites"
+                            "answer1: Yes; facets: Information Processing Style; why: "
                         ],
                     },
                     "after_action": {
