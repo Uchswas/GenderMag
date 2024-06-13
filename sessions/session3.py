@@ -10,9 +10,9 @@ gm_session_4 = {
         {
             "subgoal": "Abby wants to know where people are staying",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "answers": "Yes",
-            "facets_used": ["Motivations", "Information Processing Style"],
-            "why": "She is attending and doesn't want to stay by herself (want to be where others are)",
+            "answers": "Yes/ Maybe",
+            "facets_used": ["Yes: Attitude Towards Risk", "Maybe: Attitude Towards Risk"],
+            "why": "She attending and doesnt want to stay by herself (want to be where others are); KNow more about the conference venue before hotel. Look at cost of attending",
             "Actions": [
                 {
                     "action": "Click on attending",
@@ -20,9 +20,9 @@ gm_session_4 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: None of the above; why: Abby has been on other pages, so she is familiar",
-                            "answer2: Maybe; facets: Information Processing Style; why: Attending label is promising, but she might scroll down and see what else is there.",
-                            "answer3: No; facets: None of the above; why: Attending does not say Hotel, she will look at the program to know what she is getting into - how many days to stay"
+                            "answer1: Yes; facets: Motivation, Information Processing Style; why: Abby has been on other pages, so she is familiar",
+                            "answer2: Maybe; facets: Information Processing Style, Attitude towards risk, Learning Style; why: Attending label: Promising, but she might scroll down to see what else is available. She may not want to click on a link. The attending label does not mention hotel.",
+                            "answer3: Information Processing Style; facets: None of the above; why: She will look at the program to know what she is getting into and determine how many days to stay."
                         ],
                     },
                     "after_action": {
@@ -65,8 +65,7 @@ gm_session_4 = {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: None of the above; why: She is making progress. Center of activity; can network; can share room so cost will not be a problem",
-                            "answer2: Yes; facets: None of the above; why: She found where the conference is going to be and got info about hotels"
+                            "answer1: Yes; facets: Motivations, Attitude Towards Risk;  why: She is making progress: it's the center of activity, she can network, and share a room, so cost won't be a problem. She found out where the conference is and got info about hotels. The site encourages people to stay together, which makes her feel better.",
                         ],
                     }
                 }
@@ -76,8 +75,8 @@ gm_session_4 = {
             "subgoal": "How many days to stay at the conference",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "answers": "Yes",
-            "facets_used": ["Motivations", "Information Processing Style"],
-            "why": "She is task-oriented motivation style. She can't proceed without knowing this.",
+            "facets_used": ["Motivations", "Information Processing Style", "Attitude Towards Risk"],
+            "why": "She has a task-oriented motivation style and can't proceed without knowing all the details. She reads a lot, so she will gather all the information before doing the task (e.g., booking a hotel). She doesn't want to commit to staying for the whole conference if it's not interesting.",
             "Actions": [
                 {
                     "action": "Click on program",
@@ -85,16 +84,16 @@ gm_session_4 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Motivations; why: She is interested in knowing more about the program.",
-                            "answer2: Maybe; facets: Information Processing Style; why: She might go for tracks, as that may also say something about the program"
+                            "answer1: Yes; facets: Motivations, Information Processing Style; why: She is interested in knowing more about the program.",
+                            "answer2: Maybe; facets: None of this above; why: She might go for tracks, as that may also say something about the program"
                         ],
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: None of the above; why: She is getting information about the program - because she sees a weak overview",
-                            "answer2: Maybe; facets: None of the above; why: She is overwhelmed...she is not seeing the papers (technical papers)."
+                            "answer1: Yes; facets: Motivations; why: She is getting information about the program - because she sees a weak overview",
+                            "answer2: Maybe; facets: Attitude Towards Risk; why: She is overwhelmed as she is not seeing the technical papers. There are no negative feelings at this point. She is getting some information and needs to read more about it. She might be looking for a detailed schedule rather than just a weekly overview.."
                         ],
                     }
                 },
@@ -104,15 +103,15 @@ gm_session_4 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style; why: She is interested in knowing more about the program. This label is the best for what she is intending to do"
+                            "answer1: Yes; facets: Motivations; why: She is interested in knowing more about the program. This label is the best for what she is intending to do"
                         ],
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: None of the above; why: A lot of information and it is all laid out by date. So she feels that is making progress.",
-                            "answer2: Maybe; facets: None of the above; why: Lots of stuff going on. Different roles...these acronyms, these might not make sense. Lots of whitespace."
+                            "answer1: Yes; facets: Motivations, Information Processing Style; why: She feels overwhelmed by the lot of information, all laid out by date, but she feels she is making progress since it says Main conference on top. She is further along than she was, but she is still unsure where to go next.",
+                            "answer2: Maybe; facets: Computer self-efficacy, learning style; why: Lots of stuff is going on with different roles and acronyms that might not make sense to her. There's lots of whitespace, and different shades of gray for the main conference, but nothing stands out. She is making progress with more process-oriented learning, but she's going to get stumped, especially since she doesn't know the acronyms. All these acronyms make her worry about whether she can fit in."
                         ],
                     }
                 },
@@ -122,15 +121,7 @@ gm_session_4 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Maybe; facets: Information Processing Style; why: Tracks is not particularly attracting. More likely to pick on program. She is uncomfortable and would like to",
-                            "answer2: No; facets: None of the above; why: She will stay on the program. She will be thorough and read through the next item on the program"
-                        ],
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": "Dummy2.html",
-                        "answers": [
-                            "answer1: Maybe; facets: None of the above; why: She is not sure where to go next. These acronyms are making her worry about whether she can fit."
+                            "answer2: Information Processing Style, Attitude Towards Risk, Learning Style; facets: None of the above; why: Tracks are not particularly attracting her; she is more likely to focus on the program. She is uncomfortable but will stay on the program. She will be thorough and read through the next item on the program. Abby won't remember to scroll back up and click on the tracks; she might try to find items on the left side to click."
                         ],
                     }
                 }
