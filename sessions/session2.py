@@ -28,12 +28,12 @@ gm_session_2 = {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: None of the above; why: She wanted a lot of information and she gets lots of practical information that she needs"
+                            "answer1: Yes; facets: ☐ Motivations ,Information Processing Stylee; why: She wanted a lot of information and she gets lots of practical information that she needs"
                         ],
                     }
                 },
                 {
-                    "action": "Scroll down",
+                    "action": "She is going to scroll down",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
