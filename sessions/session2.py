@@ -3,7 +3,7 @@ Source: GM_Forms_Session#3.pdf
 
 """
 
-gm_session_2 = {
+gm_session = {
     "scenario": "Abi is a second author to a paper accepted to POPL. So doesn't have to go to POPL2019, but she is deciding whether she should go to the conference.",
     "persona" : "ABI",
     "Subgoals": [

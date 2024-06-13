@@ -3,7 +3,7 @@ Source: GM_Forms_Session#4.pdf
 
 """
 
-gm_session_4 = {
+gm_session = {
     "scenario": "Abi decided to attend ICSE 2019 and is making travel arrangements (not doing the third-party registration sequence) - she is the second author on a paper that got accepted, so she doesn't have to go, but she has decided to go.",
     "persona" : "ABI",
     "Subgoals": [

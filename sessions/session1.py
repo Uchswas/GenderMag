@@ -3,7 +3,7 @@ Source: GM_Forms-FilledIn-2019-0118.pdf
 
 """
 
-gm_session_1 = {
+gm_session = {
     "scenario": "Abi has decided to submit a paper to ASE 2019 and doing all the pre-submission actions available on the website",
     "persona" : "ABI",
     "Subgoals": [
