@@ -38,15 +38,17 @@ gm_session_2 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style; why: She is seeing information popping up and she wants to see more"
+                            """
+                            answer1: Yes; facets: Information Processing Style; 
+                            why: She is seeing information popping up and she wants to see more
+                            """
                         ],
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style; why: She is seeing keynote pics and names of keynotes. Although the names don’t make sense, she is getting to know more about the conference.",
-                            "answer2: Yes; facets: None of the above; why: Loves that there are tutorials so that she can learn more."
+                            "answer1: Yes; facets: Information Processing Style, Learning: Style; why: She is seeing keynote pics and names of keynotes. Although the names don’t make sense, she is getting to know more about the conference.Loves that there are tutorials so that she can learn more.",
                         ],
                     }
                 },
@@ -56,15 +58,15 @@ gm_session_2 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Motivations; why: Abby is looking for more information on the program so she will do it.",
-                            "answer2: Maybe; facets: Information Processing Style; why: Big Orange thing, so she might think that’s it"
+                            "answer1: Yes; facets: Motivations, Information Processing Style; why: Abby is looking for more information on the program so she will do it.",
+                            "answer2: Maybe; facets: None of the above; why: Big Orange thing, so she might think that’s it"
                         ],
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Maybe; facets: None of the above; why: It's overwhelming - a lot of information. She sees she is making progress, that there is lots of information."
+                            "answer1: Maybe; facets:  Attitude Towards Risk.  Learning Style; why: It's overwhelming - a lot of information. She sees she is making progress, that there is lots of information. But, she is overwhelmed with so much information it doesn’t match her learning style"
                         ],
                     }
                 },
@@ -81,7 +83,8 @@ gm_session_2 = {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: No; facets: Information Processing Style; why: There is a lot of information, so she is getting the information but at the same time, it is too much."
+                            "answer1: Maybe; facets: Information Processing Style, Attitude towards Risk; why: There is a lot of information, so she is getting the information but at the same time, it is too much.",
+                            "answer2: Maybe; facets: Attitude Towards Risk ,Learning Style ; why: Too much information makes it hard for her to filter out what is good; she expects some highlights and doesn't want to waste time; not seeing the keynote/tutorials anymore increases her frustration."
                         ],
                     }
                 },
@@ -91,8 +94,8 @@ gm_session_2 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Maybe; facets: Information Processing Style; why: She is interested, but she is not going to click on any of them because she is not a tinkerer.",
-                            "answer2: Maybe; facets: Attitude Towards Risk; why: Never been to this conference before, distinguished paper is going to be too advanced."
+                            "answer1: Maybe; facets: Learning Style; why: Why?She is interested, but she is not going to click on any of them because she is not a tinkerer. There is a lot of labels that she doesn’t understand.",
+                            "answer2: No; facets: Motivation, Computer Self Efficiency, Learning Style; why: Never been to this conference before, feels distinguished paper is too advanced, doesn't want to jump to the end; she wanted to look at the keynotes to get a sense of what the conference is about.."
                         ],
                     },
                     "after_action": {
@@ -109,7 +112,7 @@ gm_session_2 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Maybe; facets: Information Processing Style; why: No way to go from here. There are links to the distinguished paper, but these are pretty heavy."
+                            "answer1: Yes; facets: Information Processing Style, computer self-efficacy, Learning Style; why: No way to proceed; links to the distinguished paper are heavy; she needs introductory material to learn about the community and determine its value. She wants a global view of the conference, so this is important. She is also looking for a step-by-step guide."
                         ],
                     },
                     "after_action": {
@@ -126,14 +129,16 @@ gm_session_2 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style; why: She is here to do that. She wants to get the task done."
+                            "answer1: Yes; facets: Motivation, Learning Style; why: She is here to do that. She wants to get the task done. Her goal to get more information and make decision to whether to attend"
                         ],
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Maybe; facets: None of the above; why: Abby is a little more confused. Abby can't figure out if it's a tutorial."
+                            "answer1: Maybe; facets: Information Processing Style, Computer Self-Efficacy, Learning Style; why: Abby is a little more confused and can't figure out if it's a tutorial. She likes elegant, foundational, formal words due to her familiarity with algorithms. The importance pushes her to say yes, but the process makes her lean towards no. It doesn't feel like a tutorial, and it's unclear what she will get out of it as it reads very much like a research paper.",
+                            "answer2: No; facets: Computer Self-Efficacy,Attitude Towards Risk, Learning Style; why:The tutorial seems not hands-on, more like a lecture, and quite complicated, so she is unsure if she will understand it and whether it is worth her time to attend the conference."
+
                         ],
                     }
                 }
