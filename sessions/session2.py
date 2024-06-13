@@ -12,7 +12,7 @@ gm_session_2 = {
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "answers": "Yes",
             "facets_used": ["Motivations", "Information Processing Style", "Attitude Towards Risk"],
-            "why": "She wants to know what is presented. She doesn't want to waste time.",
+            "why": "She wants to know what is presented bcause it aligns with her overall tasks. She doesn't want to waste time because of her attitude towards risk.",
             "Actions": [
                 {
                     "action": "Scroll down to POPL 2019",
@@ -20,7 +20,7 @@ gm_session_2 = {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_on_which_abi_take_the_action": "Dummy.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style; why: See what's more on this page",
+                            "answer1: Yes; facets: Information Processing Style; why: See what's more on this page, she is a comprehensive information processor",
                             "answer2: Yes; facets: Motivations; why: She wants to look at the program, because she wants to get an overview of the conference, and she is going for that"
                         ],
                     },
@@ -28,7 +28,7 @@ gm_session_2 = {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: ☐ Motivations ,Information Processing Stylee; why: She wanted a lot of information and she gets lots of practical information that she needs"
+                            "answer1: Yes; facets: ☐ Motivations ,Information Processing Stylee; why: She wanted a lot of information, because she is a comprehensive information processor and she gets lots of practical information that she needs"
                         ],
                     }
                 },
@@ -40,7 +40,7 @@ gm_session_2 = {
                         "answers": [
                             """
                             answer1: Yes; facets: Information Processing Style; 
-                            why: She is seeing information popping up and she wants to see more
+                            why: She is seeing information popping up and she wants to see more, as she is a comprehensive information processor
                             """
                         ],
                     },
@@ -48,7 +48,7 @@ gm_session_2 = {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: Information Processing Style, Learning: Style; why: She is seeing keynote pics and names of keynotes. Although the names don’t make sense, she is getting to know more about the conference.Loves that there are tutorials so that she can learn more.",
+                            "answer1: Yes; facets: Information Processing Style, Learning: Style; why: She is seeing keynote pics and names of keynotes. Although the names don’t make sense, she is getting to know more about the conference. Loves that there are tutorials so that she can learn more, because of her process oriented learning style.",
                         ],
                     }
                 },
@@ -119,7 +119,7 @@ gm_session_2 = {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
                         "page_on_which_abi_is_after_the_action": "Dummy2.html",
                         "answers": [
-                            "answer1: Yes; facets: None of the above; why: She is here"
+                            "answer1: Yes; facets: None of the above; why: She is here, she can see the feedback on the screen"
                         ],
                     }
                 },
