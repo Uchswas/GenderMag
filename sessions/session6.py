@@ -48,11 +48,10 @@ gm_session5 = {
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ICSE2019Program.png",
+                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ICSE2019Complete.png",
                         "answers": [
-                            "answer1: Yes; facets: Motivations; why: She finds “session”.",
-                            "answer2: Yes; facets: Information Processing Style; why: She does lots of program info, and lots of sessions, altho it does look like a lot!",
-                            "answer3: Maybe; facets: Learning; why: Learning style makes this fairly negative. A little rocky -- Might be getting overwhelmed -- this program is HUGE."
+                            "answer1: Yes; facets: Motivations; why: She finds “session”. She does lots of program info, and lots of sessions, altho it does look like a lot!",
+                            "answer3: Maybe; facets: Computer Self-efficacy, Learning style; why: Learning style makes this fairly negative. A little rocky -- Might be getting overwhelmed -- this program is HUGE."
                         ],
                     }
                 },
@@ -60,19 +59,41 @@ gm_session5 = {
                     "action": "Click on session timeline",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ICSE2019Timeline.png",
+                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ICSE2019Complete.png",
                         "answers": [
-                            "answer1: Yes; facets: Motivations, Information Processing Style; why: She would have read the part on the top and not have even scrolled.",
-                            "answer2: Yes; facets: Information Processing Style; why: Wants the scaffolding that this tab might give her.",
-                            "answer3: Yes; facets: Information Processing Style; why: Whether make sense of this page entirely before moving on to the next page."
+                            "answer1: Yes; facets: Motivations, Information Processing Style, learning Style; why: She would have read the part on the top and not have even scrolled.Wants the scaffolding that this tab might give her",
+                            "answer2: Maybe; facets: None of the above; why: whether make sense of this page entirely before moving on to the next page",
+                            "answer3: No; facets: Information Processing Style; why: She’s not even at the top anymore, so doesn’t see it"
                         ],
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ICSE2019Timeline.png",
+                        "page_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH+"ICSE2019TimeLine.png",
                         "answers": [
-                            "answer1: Yes; facets: Motivations, Information Processing Style; why: She likes this view better than the previous view she was on because it’s more of a top-overviewish view that might help her identify her interests.",
-                            "answer2: Maybe; facets: None of the above; why: What are the gray things? Are they not presentations at all? Room #? What is room1, room2, …. Yes side: She knows she’s going to ICSE paper presentations. No side: this is taking forever. (Doesnt have too much time to spare and its not easy)"
+                            "answer1: Yes; facets: None of Above; why: She likes this view better than the previous view she was on because it’s more of a top-overviewish view that might help her identify her interests.",
+                            "answer2: Maybe; facets: Information Processing Style, Attitude Towards Risk; why: What are the gray things? Are they not presentations at all? Room #? What is room1, room2, …. Yes side: She knows she’s going to ICSE paper presentations. No side: this is taking forever. (Doesnt have too much time to spare and its not easy)"
+                            "answer3: No; facets: None of Above; why: Not getting more information. Also (a nit): She is sort of irritated with the big label of ICSE",
+
+                        ],
+                    }
+                }
+                {
+                    "action": "Click on the R tutorial",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ICSE2019TimeLine.png",
+                        "answers": [
+                            "answer1: Yes; facets: Information Processing Style, learning Style; why: Since R is at very top, she will. If it weren’t, she wouldn’t. Will click on one of the sessions, but maybe not that one.",
+                            "answer2: Maybe; facets: None of the above; why: There’s no obvious choice for her.",
+                            "answer3: No; facets: Motivations; why: Abb doesn’t need help with statistics. She really wants to go to more in line with her interest or learn new things. Wants a more 'real ICSE' experience. She doesn’t know a lot of the terms being used (e.g., 'devOps', etc.) and is a little unhappy that she didn’t see anything about 'mining'."
+                        ],
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH+"ICSE2019Tutorial.png",
+                        "answers": [
+                            "answer2: Maybe; facets:Attitude Towards Risk; why: Whoops! We ended up at the wrong tutorials (top of page) when we clicked. Had to scroll and scroll to get to the right place. The description is enticing to her, but she’s still not sure that attending an entire day on R is worth her while. And WHERE IS THIS being held? Somewhat related to mining, maybe she’ll meet some mining folks there?"
+
                         ],
                     }
                 }

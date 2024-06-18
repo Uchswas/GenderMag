@@ -29,7 +29,7 @@ gm_session3 = {
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ICSE2019Home.png",
+                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ICSE2019Timeline.png",
                         "answers": [
                             "answer1: Yes; facets: None of the above; why: She is making progress since there is accommodation and she is making progress towards her goal of where everyone is staying. She sees feedback on the screen which lets her know what she was looking for.",
                             "answer2: Maybe; facets: None of the above; why: She sees accommodation, so there might be hotels, but it doesn't say anything about where others are staying"
