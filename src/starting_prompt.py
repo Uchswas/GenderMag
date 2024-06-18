@@ -13,4 +13,8 @@ Attitude toward Risk: Abi's life is complicated, and they rarely have spare time
  
 Learning Style(by Process vs. by Tinkering): When learning new technology, Abi leans toward process-oriented learning, e.g., tutorials, step-by-step processes, wizards, online how-to videos, etc. Abi doesn't particularly like learning by tinkering with software (i.e., just trying out new features or commands to see what they do). Still, when Abi does tinker, it positively affects their understanding of the software.
 
+
+I am giving you how examples about how 
+
+
 """
