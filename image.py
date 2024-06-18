@@ -9,7 +9,8 @@ class ScreenshotTaker:
     async def _take_screenshot(self, file_path, output_path):
         browser = await launch(headless=self.headless)
         page = await browser.newPage()
-        await page.goto(f'file://{os.path.abspath(file_path)}')
+        await page.goto(f'file://{os.path.abspath(file_path)}', waitUntil='networkidle0')  # Wait until the network is idle
+        await page.waitFor(10000)  # Additional wait time (in milliseconds) if needed
         await page.screenshot({'path': output_path, 'fullPage': True})
         await browser.close()
         return output_path
