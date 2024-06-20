@@ -2,6 +2,8 @@ from openai import OpenAI
 from promptlayer import PromptLayer
 from dotenv import load_dotenv
 import os
+from subgoals_actions import strings_to_iterate_over
+from examples import starting_prompt
 
 load_dotenv()
 PROPLAYER_API_KEY = os.getenv('PROPLAYER_API_KEY')
@@ -13,14 +15,14 @@ client = OpenAI()
 
 def create_chat_completion(messages, tags):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=messages,
         pl_tags=tags
     )
     return response
 
 messages = [
-    {"role": "system", "content": "You are an AI assistant."}
+    {"role": "system", "content": starting_prompt}
 ]
 
 def handle_user_input(user_input):
