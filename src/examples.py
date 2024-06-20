@@ -35,10 +35,9 @@ examples = [f"example{i} : {globals()[f'gm_session{i}']}" for i in range(1, 8)]
 examples = "\n\n\n\n".join(examples)
 
 
-starting_prompt = (
-    definition + """
+starting_prompt =  definition + """
     I am also giving you 7 GenderMag session examples so that you can learn. Learn from those examples, then I will give you the use case, goal, and sub-goal. Also, let me know if you don't find the images from the link.
     """ + examples
-)
 
-print(starting_prompt)
+
+

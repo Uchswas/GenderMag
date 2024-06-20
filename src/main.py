@@ -1,57 +1,37 @@
-import openai
-import requests
+from openai import OpenAI
+from promptlayer import PromptLayer
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
 load_dotenv()
-
-# Set up your API keys from environment variables
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 PROPLAYER_API_KEY = os.getenv('PROPLAYER_API_KEY')
-CONTEXT_ID = os.getenv('CONTEXT_ID')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-# Initialize OpenAI
-openai.api_key = OPENAI_API_KEY
+promptlayer_client = PromptLayer(api_key=PROPLAYER_API_KEY)
+OpenAI = promptlayer_client.openai.OpenAI
+client = OpenAI()
 
-# Function to call OpenAI API
-def chat_with_gpt(prompt, conversation_history):
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=conversation_history + [{"role": "user", "content": prompt}]
+def create_chat_completion(messages, tags):
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
+        pl_tags=tags
     )
-    return response.choices[0].message['content']
+    return response
 
-# Function to get or update context using PropLayer (pseudo code, adjust as per actual API)
-def update_proplayer_context(context_id, new_prompt):
-    headers = {
-        'Authorization': f'Bearer {PROPLAYER_API_KEY}',
-        'Content-Type': 'application/json'
-    }
-    data = {
-        'context_id': context_id,
-        'new_prompt': new_prompt
-    }
-    response = requests.post('https://api.proplayer.com/update_context', headers=headers, json=data)
-    return response.json()
+messages = [
+    {"role": "system", "content": "You are an AI assistant."}
+]
 
-# Initialize conversation
-conversation_history = []
+def handle_user_input(user_input):
+    messages.append({"role": "user", "content": user_input})
+    completion = create_chat_completion(messages, ["continuous-chat"])
+    assistant_reply = completion.choices[0].message['content']
+    messages.append({"role": "assistant", "content": assistant_reply})
+    print(assistant_reply)
 
 while True:
     user_input = input("You: ")
-    
-    # Update context with new user input
-    update_response = update_proplayer_context(CONTEXT_ID, user_input)
-    
-    # Get updated conversation history
-    conversation_history = update_response['conversation_history']
-    
-    # Get response from GPT-3.5
-    gpt_response = chat_with_gpt(user_input, conversation_history)
-    
-    # Update conversation history with GPT response
-    conversation_history.append({"role": "assistant", "content": gpt_response})
-    
-    # Print GPT response
-    print(f"GPT: {gpt_response}")
+    if user_input.lower() in ['exit', 'quit']:
+        break
+    handle_user_input(user_input)
