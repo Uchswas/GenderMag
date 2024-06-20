@@ -28,12 +28,10 @@ messages = [
 def handle_user_input(user_input):
     messages.append({"role": "user", "content": user_input})
     completion = create_chat_completion(messages, ["continuous-chat"])
-    assistant_reply = completion.choices[0].message['content']
+    assistant_reply = completion.choices[0].message.content
     messages.append({"role": "assistant", "content": assistant_reply})
     print(assistant_reply)
 
-while True:
-    user_input = input("You: ")
-    if user_input.lower() in ['exit', 'quit']:
-        break
+
+for user_input in strings_to_iterate_over:
     handle_user_input(user_input)
