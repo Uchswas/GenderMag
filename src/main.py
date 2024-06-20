@@ -1,70 +1,57 @@
 import openai
-from proptlayr import PromptLayer
+import requests
+from dotenv import load_dotenv
+import os
 
-# Set up the OpenAI API key
-openai.api_key = 'your-openai-api-key'
+# Load environment variables from .env file
+load_dotenv()
 
-# Set up ProptLayr
-pl = PromptLayer(api_key='your-proptlayr-api-key')
+# Set up your API keys from environment variables
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+PROPLAYER_API_KEY = os.getenv('PROPLAYER_API_KEY')
+CONTEXT_ID = os.getenv('CONTEXT_ID')
 
-# Define the few-shot examples
-examples = [
-    {
-        "role": "system",
-        "content": "You are a helpful assistant with the persona of ABI. Answer questions as ABI would."
-    },
-    {
-        "role": "user",
-        "content": "Would ABI know what to do next on this webpage?"
-    },
-    {
-        "role": "assistant",
-        "content": "ABI would probably look for a clear and prominent button or link that indicates the next step."
-    },
-    {
-        "role": "user",
-        "content": "How would ABI react to a complex form?"
-    },
-    {
-        "role": "assistant",
-        "content": "ABI might feel overwhelmed by a complex form and prefer more straightforward, step-by-step guidance."
-    },
-    {
-        "role": "user",
-        "content": "Would ABI find this feature easy to use?"
-    },
-    {
-        "role": "assistant",
-        "content": "ABI might find this feature confusing without clear instructions or a tutorial."
-    }
-]
+# Initialize OpenAI
+openai.api_key = OPENAI_API_KEY
 
-# Initialize PromptLayer with the initial examples
-pl.add_messages(examples)
-
-# Define the function to get the LLM's response with context
-def get_response_from_llm():
+# Function to call OpenAI API
+def chat_with_gpt(prompt, conversation_history):
     response = openai.ChatCompletion.create(
-        model="gpt-4",  # Use "gpt-3.5-turbo" or another chat model if "gpt-4" is not available
-        messages=pl.get_messages()
+        model="gpt-4",
+        messages=conversation_history + [{"role": "user", "content": prompt}]
     )
+    return response.choices[0].message['content']
 
-    return response.choices[0].message['content'].strip()
+# Function to get or update context using PropLayer (pseudo code, adjust as per actual API)
+def update_proplayer_context(context_id, new_prompt):
+    headers = {
+        'Authorization': f'Bearer {PROPLAYER_API_KEY}',
+        'Content-Type': 'application/json'
+    }
+    data = {
+        'context_id': context_id,
+        'new_prompt': new_prompt
+    }
+    response = requests.post('https://api.proplayer.com/update_context', headers=headers, json=data)
+    return response.json()
 
-# Continuous chat loop with context
-def continuous_chat():
-    print("Starting the GenderMag continuous chat. Type 'exit' to end the chat.")
+# Initialize conversation
+conversation_history = []
+
+while True:
+    user_input = input("You: ")
     
-    while True:
-        question = input("Enter the action or sub-goal to evaluate: ")
-        if question.lower() == 'exit':
-            print("Exiting the chat.")
-            break
-        
-        pl.add_message({"role": "user", "content": question})
-        response = get_response_from_llm()
-        pl.add_message({"role": "assistant", "content": response})
-        print(f"Response: {response}")
-
-# Run the continuous chat loop
-continuous_chat()
+    # Update context with new user input
+    update_response = update_proplayer_context(CONTEXT_ID, user_input)
+    
+    # Get updated conversation history
+    conversation_history = update_response['conversation_history']
+    
+    # Get response from GPT-3.5
+    gpt_response = chat_with_gpt(user_input, conversation_history)
+    
+    # Update conversation history with GPT response
+    conversation_history.append({"role": "assistant", "content": gpt_response})
+    
+    # Print GPT response
+    print(f"GPT: {gpt_response}")
