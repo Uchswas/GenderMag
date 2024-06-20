@@ -1,0 +1,185 @@
+gm_moments = {
+    "scenario": "Abi wants to get started with the course",
+    "Subgoals": [
+        {
+            "subgoal": "Find the Syllabus",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.html",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read the Syllabus",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus(PDF)",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read information under Modules",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+            "Actions": [
+                {
+                    "action": "Click on Modules",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Modules.html",
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+
+gm_moments_course_start = {
+    "scenario": "Abi wants to get started with the course",
+    "Subgoals": [
+        {
+            "subgoal": "Find the Syllabus",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.html",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read the Syllabus",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus(PDF)",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read information under Modules",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+            "Actions": [
+                {
+                    "action": "Click on Modules",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Modules.html",
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+gm_moments_week1 = {
+    "scenario": "Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are",
+    "Subgoals": [
+        {
+            "subgoal": "Find the Syllabus",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.HTML",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.HTML",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read the Syllabus",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus(PDF)",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read information under Modules",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+            "Actions": [
+                {
+                    "action": "Click on Modules",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Modules.html",
+                    }
+                }
+            ]
+        }
+    ]
+}
+

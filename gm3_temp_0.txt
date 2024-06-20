@@ -1,0 +1,186 @@
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Find the Syllabus
+Question: Will Abi have formed this sub-goal as a step to their overall goal?
+Subgoal Page Image: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/HomePage.png
+
+
+
+
+Answer: MAYBE
+Facets: 1. Motivations, 2. Information Processing Style, 4. Computer Self-Efficacy
+Why: Abi's primary motivation is to accomplish their tasks, and understanding the syllabus is often a crucial step in knowing what to do during Week 1 and the deadlines. Abi's comprehensive information processing style means they would likely look for a syllabus to gather all necessary information. However, if Abi has low confidence in navigating unfamiliar interfaces, they might not immediately form this sub-goal unless the syllabus is prominently mentioned or easily accessible on the homepage.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Find the Syllabus
+Current Action: Click on Syllabus
+Before Action Question: Will ABI know what to do at this step? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/HomePage.png
+
+
+
+
+Answer: YES
+Facets: 1. Motivations, 2. Information Processing Style, 4. Computer Self-Efficacy
+Why: The homepage image clearly shows a "Syllabus" link in the navigation menu. Abi, motivated to accomplish their tasks and gather comprehensive information, would likely recognize this link as the appropriate action to take. The clear labeling of the "Syllabus" link provides a straightforward path, which helps mitigate any low confidence Abi might have in navigating the site.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Find the Syllabus
+Current Action: Click on Syllabus
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/AfterclickingonSyllabus.png
+
+
+
+
+Answer: YES
+Facets: 1. Motivations, 2. Information Processing Style, 4. Computer Self-Efficacy
+Why: After clicking on the "Syllabus" link, Abi will land on a page that clearly displays the syllabus content. This page includes a title "Syllabus" and detailed information about the course, which aligns with Abi's goal of figuring out what to do during Week 1 and understanding the deadlines. The presence of this relevant information will confirm to Abi that they are making progress toward their goal. The clear and organized presentation of the syllabus helps reinforce Abi's confidence in their actions.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Read the Syllabus
+Question: Will Abi have formed this sub-goal as a step to their overall goal?
+Subgoal Page Image: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/AfterclickingonSyllabus.png
+
+
+
+
+Answer: YES
+Facets: 1. Motivations, 2. Information Processing Style
+Why: Abi's primary motivation is to accomplish their tasks, and reading the syllabus is a logical step to understand what needs to be done during Week 1 and the associated deadlines. Given Abi's comprehensive information processing style, they would naturally want to read through the syllabus to gather all necessary details. The syllabus page provides the relevant information, making it clear that reading it is essential for achieving their overall goal.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Read the Syllabus
+Current Action: Click on Syllabus(PDF)
+Before Action Question: Will ABI know what to do at this step? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/AfterclickingonSyllabus.png
+
+
+
+
+Answer: MAYBE
+Facets: 2. Information Processing Style, 4. Computer Self-Efficacy, 5. Learning Style
+Why: The page does have a "Syllabus (PDF)" link, which suggests that clicking it will provide a more detailed or downloadable version of the syllabus. However, there is no explicit instruction indicating that Abi needs to click this link to read the syllabus. Abi's comprehensive information processing style might lead them to click on the link to gather more information, but their low computer self-efficacy and preference for clear, step-by-step instructions might make them hesitant if the purpose of the link is not immediately clear.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Read the Syllabus
+Current Action: Click on Syllabus(PDF)
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/AfterclickingSyllabusPDF.png
+
+
+
+
+Answer: YES
+Facets: 1. Motivations, 2. Information Processing Style
+Why: After clicking on the "Syllabus (PDF)" link, Abi will land on a page that clearly displays the syllabus in a PDF format. The PDF format is likely to contain detailed and organized information about the course, including what to do during Week 1 and the deadlines. This aligns with Abi's goal of understanding the course requirements and deadlines. The presence of this detailed information will confirm to Abi that they are making progress toward their goal. The clear presentation of the syllabus in a familiar PDF format will also help reinforce Abi's confidence in their actions.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Read information under Modules
+Question: Will Abi have formed this sub-goal as a step to their overall goal?
+Subgoal Page Image: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/AfterclickingSyllabusPDF.png
+
+
+
+
+Answer: NO
+Facets: 2. Information Processing Style, 4. Computer Self-Efficacy
+Why: The page image after clicking the "Syllabus (PDF)" link does not provide any indication or instruction that Abi should read information under "Modules" to figure out what to do during Week 1 and the deadlines. Abi's comprehensive information processing style means they would need clear cues or instructions to form this sub-goal. Additionally, Abi's low computer self-efficacy might make them hesitant to explore other sections without explicit guidance. Therefore, without a clear indication on the page, Abi is unlikely to form the sub-goal of reading information under "Modules."
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Read information under Modules
+Current Action: Click on Modules
+Before Action Question: Will ABI know what to do at this step? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/AfterclickingSyllabusPDF.png
+
+
+
+
+Answer: NO
+Facets: 2. Information Processing Style, 4. Computer Self-Efficacy, 5. Learning Style
+Why: The page image after clicking the "Syllabus (PDF)" link does not provide any clear instruction or indication that Abi should click on "Modules" to find information about what to do during Week 1 and the deadlines. Abi's comprehensive information processing style and low computer self-efficacy mean they would need explicit guidance to take this action. Additionally, Abi's preference for process-oriented learning suggests they would benefit from step-by-step instructions, which are not present on this page. Therefore, without clear cues or instructions, Abi is unlikely to know to click on "Modules" at this step.
+
+
+
+
+
+
+
+
+
+Scenario: Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are
+Subgoal: Read information under Modules
+Current Action: Click on Modules
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/Modules.png
+
+
+
+
+Answer: YES
+Facets: 1. Motivations, 2. Information Processing Style
+Why: After clicking on "Modules," Abi will land on a page that clearly lists the course modules, including specific information for Week 1. This page provides detailed content and deadlines for each week, which directly aligns with Abi's goal of figuring out what to do during Week 1 and understanding the deadlines. The organized presentation of the modules and the relevant information will confirm to Abi that they are making progress toward their goal. This aligns with Abi's motivation to accomplish their tasks and their comprehensive information processing style, as they will see the necessary details laid out clearly.
+
+
+
+
+
+
+
+
+

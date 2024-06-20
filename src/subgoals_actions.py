@@ -1,69 +1,66 @@
 from constant import BASE_IMAGE_PATH
 
-gm_moments = {
-    "scenario": "Abi wants to submit Assignment 7",
+gm_moments= {
+    "scenario": "Abi wants to get started with the course",
     "Subgoals": [
         {
-            "subgoal": "Find assignment 7",
+            "subgoal": "Find the Syllabus",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.html",
             "Actions": [
                 {
-                    "action": "Click on assignment 7 link under Coming up section (Before)",
+                    "action": "Click on Syllabus",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
-                     
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.html",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Assignment7.png",
-                    }
-                },
-                {
-                    "action": "Click on Github link (Before)",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"AfterclickingGithub.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
                     }
                 }
             ]
         },
         {
-            "subgoal": "Go to Gradescope to submit assignment",
+            "subgoal": "Read the Syllabus",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
             "Actions": [
                 {
-                    "action": "Click on assignment 7 link under Coming up section (Before)",
+                    "action": "Click on Syllabus(PDF)",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.html",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
                     }
-                },
+                }
+            ]
+        },
+        {
+            "subgoal": "Read information under Modules",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
+            "Actions": [
                 {
-                    "action": "Click on load assignment 7 for submission (Before)",
+                    "action": "Click on Modules",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.html",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Afterclickingload.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Modules.html",
                     }
                 }
             ]
         }
     ]
 }
+
+
 
 
 
@@ -82,23 +79,25 @@ def generate_strings(gm_moments):
         for action_info in subgoal_info["Actions"]:
             subgoal_string = f"Scenario: {scenario}\n"
             subgoal_string += f"Subgoal: {subgoal_info['subgoal']}\n"
-            subgoal_string += f"    Current Action: {action_info['action']}\n"
+            subgoal_string += f"Current Action: {action_info['action']}\n"
             
-            subgoal_string += "    Before Action "
-            subgoal_string += f"Question: {action_info['before_action']['question']}\n"
-            subgoal_string += f"      Page Image on which the action would take: {action_info['before_action']['page_image_on_which_abi_take_the_action']}\n"
+            subgoal_string += "Before Action "
+            subgoal_string += f"Question: {action_info['before_action']['question']}"
+            subgoal_string += "or Is there any clear instruction/ indication in the page to do this action\n"
+            subgoal_string += f"Page Image on which the action would take: {action_info['before_action']['page_image_on_which_abi_take_the_action']}\n"
             result.append(subgoal_string)
 
             subgoal_string = f"Scenario: {scenario}\n"
             subgoal_string += f"Subgoal: {subgoal_info['subgoal']}\n"
-            subgoal_string += f" Current Action: {action_info['action']}\n"
-            subgoal_string += "    After Action "
-            subgoal_string += f"      Question: {action_info['after_action']['question']}\n"
-            subgoal_string += f"      Page Image on which ABI will land after taking the action: {action_info['after_action']['page_image_on_which_abi_is_after_the_action']}\n"
-            
-        result.append(subgoal_string)
+            subgoal_string += f"Current Action: {action_info['action']}\n"
+            subgoal_string += "After Action "
+            subgoal_string += f"Question: {action_info['after_action']['question']}\n"
+            subgoal_string += f"Page Image on which ABI will land after taking the action: {action_info['after_action']['page_image_on_which_abi_is_after_the_action']}\n"
+            result.append(subgoal_string)
+       
     return result
 
 # Generate strings
 strings_to_iterate_over = generate_strings(gm_moments)
+
 
