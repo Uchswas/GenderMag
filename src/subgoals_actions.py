@@ -39,7 +39,7 @@ gm_moments = {
             "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
             "Actions": [
                 {
-                    "action": "Click on assignment 7 link under Coming up section (Before)",
+                    "action": "Click on assignment 7 link under Coming up section",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
@@ -50,7 +50,7 @@ gm_moments = {
                     }
                 },
                 {
-                    "action": "Click on load assignment 7 for submission (Before)",
+                    "action": "Click on load assignment 7 for submission",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
@@ -77,6 +77,7 @@ def generate_strings(gm_moments):
         subgoal_string += f"Subgoal: {subgoal_info['subgoal']}\n"
         subgoal_string += f"Question: {subgoal_info['question']}\n"
         subgoal_string += f"Subgoal Page Image: {subgoal_info['subgoal_page_image']}\n"
+        subgoal_string += f"Also explain what you see in the image. I just need this to verify you can access the image.\n"
         result.append(subgoal_string)
         
 
@@ -90,6 +91,8 @@ def generate_strings(gm_moments):
             subgoal_string += f"Question: {action_info['before_action']['question']}"
             subgoal_string += "or Is there any clear instruction/ indication in the page to do this action\n"
             subgoal_string += f"Page Image on which the action would take: {action_info['before_action']['page_image_on_which_abi_take_the_action']}\n"
+            subgoal_string += f"Also explain what you see in the image. I just need this to verify you can access the image.\n"
+
             result.append(subgoal_string)
 
             subgoal_string = f"Scenario: {scenario}\n"
@@ -98,6 +101,8 @@ def generate_strings(gm_moments):
             subgoal_string += "After Action "
             subgoal_string += f"Question: {action_info['after_action']['question']}\n"
             subgoal_string += f"Page Image on which ABI will land after taking the action: {action_info['after_action']['page_image_on_which_abi_is_after_the_action']}\n"
+            subgoal_string += f"Also explain what you see in the image. I just need this to verify you can access the image.\n"
+
             result.append(subgoal_string)
        
     return result
