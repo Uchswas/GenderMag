@@ -49,7 +49,7 @@ messages = [
 
 def handle_user_input(user_input):
     messages.append({"role": "user", "content": user_input})
-    completion = create_chat_completion(messages, ["gendermag", "gmmomment2", "tempdefault"])
+    completion = create_chat_completion(messages, ["gendermag", "GMMOMENTFINAL1", "tempdefault"])
     assistant_reply = completion.choices[0].message.content
     print(user_input)
     print("\n\n")
