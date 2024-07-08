@@ -41,6 +41,8 @@ like any text or link has the instruction to click, she will click and do the ac
 3. Don't Assume anything from the action description. If a action says anything that exists in the page, that might not be present in the page.
 If absent, report it. For example, if a action says click on the "x" button under "y", it is possible that there is no button under 
 x under y . You have to check that too.
+4. Don't make any assumption from the image. Process the information from the image what you see. Don't interpret anything from the image 
+title or other staff. Be precise and consider what you see
 """
 
 
