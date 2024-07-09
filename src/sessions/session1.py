@@ -2,17 +2,12 @@
 Source: GM_Forms-FilledIn-2019-0118.pdf
 
 """
-
-
 import sys
 import os
 from constant import BASE_IMAGE_PATH
 
 
-
-
-
-gm_session1 = {
+gm_momments = {
     "scenario": "Abi has decided to submit a paper to ASE 2019 and doing all the pre-submission actions available on the website",
     "persona" : "ABI",
     "Subgoals": [
