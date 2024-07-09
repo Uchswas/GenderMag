@@ -1,0 +1,59 @@
+gm_moments = {
+    "scenario": "Abi wants to get started with the course",
+    "Subgoals": [
+        {
+            "subgoal": "Find the Syllabus",
+            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.png",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read the Syllabus",
+            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
+            "Actions": [
+                {
+                    "action": "Click on Syllabus(PDF)",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.png",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Read information under Modules",
+            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.png",
+            "Actions": [
+                {
+                    "action": "Click on Modules",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Modules.png",
+                    }
+                }
+            ]
+        }
+    ]
+}

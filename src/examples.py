@@ -21,12 +21,15 @@ Attitude toward Risk: Abi's life is complicated, and they rarely have spare time
 Learning Style: by Process vs. by Tinkering: When learning new technology, Abi leans toward process-oriented learning, e.g., tutorials, step-by-step processes, wizards, online how-to videos, etc. Abi doesn't particularly like learning by tinkering with software (i.e., just trying out new features or commands to see what they do). Still, when Abi does tinker, it positively affects their understanding of the software.
 
         
-I will give you the subgoals and actions of a use case one by one, and you have to answer.
+I will give you the subgoals and actions of a use case one by one, and you have to answer. Each question's output/answer format will be as follows: 
 
-The output/answer format of each question will be:
-Answer: YES and/or MAYBE and/or NO. (i.e., there might be multiple answers)
-Facets: List facets responsible for the answer, i.e., items among  1.Motivations,2.Information Processing Style,3.Attitude Towards Risk,4.Computer Self-Efficacy,5.Learning Style,6.None of the Above
+Answer: YES and/or MAYBE and/or NO. (i.e., there might be multiple answers) 
+
+Facets: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
+
 Why: short justification of the answer and facets 
+
+Details of the image: Explain what you see in the picture and what is in the image
 
 """
 
@@ -50,7 +53,7 @@ examples = [f"example{i} : {globals()[f'gm_session{i}']}" for i in range(1, 8)]
 examples = "\n\n\n\n".join(examples)
 
 
-starting_prompt =  definition + "\n\n"+asserttions
+starting_prompt =  definition + "\n\n" + asserttions
 
 
 
