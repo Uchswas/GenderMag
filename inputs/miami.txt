@@ -1,3 +1,4 @@
+TAG = "MIAMI"
 gm_moments = {
     "scenario": "Abi wants to submit Assignment 7",
     "Subgoals": [

@@ -1,15 +1,15 @@
 from constant import BASE_IMAGE_PATH
-TAG = "KEYWEST"
+TAG = "FIJI"
 gm_moments = {
-    "scenario": "Ecampus CS162 student wants to figure out what to do during Week 1 and what the Week 1 deadlines are",
+    "scenario": "Ecampus CS162 student wants to figure out what to do to complete the course to be able to plan their term.",
     "Subgoals": [
         {
-            "subgoal": "Find the Syllabus",
+            "subgoal": "Find the Syllabus page ",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.png",
             "Actions": [
                 {
-                    "action": "Click on Syllabus",
+                    "action": "Find the Syllabus page",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.png",
@@ -22,19 +22,37 @@ gm_moments = {
             ]
         },
         {
-            "subgoal": "Read the Syllabus",
+            "subgoal": "Find the summary of activities and deadlines",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
             "Actions": [
                 {
-                    "action": "Click on Syllabus(PDF)",
+                    "action": "Scroll down to “Course Summary” and read through it",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabus.png",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Find list of tools to be installed/Setup for the course",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
+            "Actions": [
+                {
+                    "action": "Click on “Tools” Tab on top",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Afterclickingontools.png",
                     }
                 }
             ]
