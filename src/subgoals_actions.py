@@ -1,67 +1,65 @@
 from constant import BASE_IMAGE_PATH
 
-
-TAG="CAROLINA"
-
+TAG="POMPANO"
 gm_moments = {
-    "scenario": "Abi is physically at ICSE 2019 and is planning which sessions to go to. (It’s Tuesday night in her hotel room.)",
-    "persona" : "ABI",
+    "scenario": "Abi (is Chinese citizen, lives in US (NOT a permanent resident)) has decided to go to ICSE and is looking into Travel Visa stuff now",
+    "persona": "ABI",
     "Subgoals": [
         {
-            "subgoal": "What sessions I should go to tomorrow",
+            "subgoal": "Look for visa information in the conference website",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image" : BASE_IMAGE_PATH + "ICSE2019Home.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "ICSE2019Home.png",
+            
             "Actions": [
                 {
-                    "action": "Click on the program menu item",
+                    "action": "Click attending",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Home.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019HomeEX.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
                     }
                 },
                 {
-                    "action": "Click at complete program",
+                    "action": "Click on Visa",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019HomeEX.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Complete.png",
-
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
                     }
                 },
-                {
-                    "action": "Click on session timeline",
+                                {
+                "action": "Click on Visa Overview",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Complete.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019TimeLine.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
                     }
                 },
-                {
-                    "action": "Click on the tutorial(R for software Engineering Research)",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019TimeLine.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019TutorialEx.png",
-                    }
-                }
+                # Ignoring this question. Cz Canadian Visa page is updated and we didn't find the excat version
+                # {
+                #     "action": "Read the visa invitation letter",
+                #     "before_action": {
+                #         "question": "Will ABI know what to do at this step? Why?",
+                #         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
+                #     },
+                #     "after_action": {
+                #         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                #         "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
+                #     }
+                # }
             ]
         }
     ]
 }
-
 
 asserttions = """
 Do and Don't before answering a question: 
