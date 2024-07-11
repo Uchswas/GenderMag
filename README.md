@@ -37,9 +37,9 @@
 
 ## Accessibility of Images
 
-The images required for the GenderMag sessions are saved in the `html/images` folder. These images need to be public so that the language model can access them.
+The images required for the GenderMag sessions are saved in the `html/images` folder. These images must be public so that the LLM can access them.
 
-You can make the repository public during running the sessions.While making your repository public temporarily can be a quick solution, it poses security risks.
+You can make the repository public while running the sessions. While making your repository public temporarily can be a quick solution, it poses security risks.
 
 ### Alternative Solution:
 
