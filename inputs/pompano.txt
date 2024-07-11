@@ -13,46 +13,47 @@ gm_moments = {
                     "action": "Click attending",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Home.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Home.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
                     }
                 },
                 {
                     "action": "Click on Visa",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
                     }
                 },
                                 {
                 "action": "Click on Visa Overview",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
                     }
                 },
-                {
-                    "action": "Read the visa invitation letter",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
-                    }
-                }
+                # Ignoring this question. Cz Canadian Visa page is updated and we didn't find the excat version
+                # {
+                #     "action": "Read the visa invitation letter",
+                #     "before_action": {
+                #         "question": "Will ABI know what to do at this step? Why?",
+                #         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
+                #     },
+                #     "after_action": {
+                #         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                #         "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
+                #     }
+                # }
             ]
         }
     ]
