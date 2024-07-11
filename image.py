@@ -3,14 +3,22 @@ import os
 from pyppeteer import launch
 
 class ScreenshotTaker:
-    def __init__(self, headless=True):
+    def __init__(self, headless=True, viewport_width=1920, viewport_height=1080, wait_time=10000):
         self.headless = headless
+        self.viewport_width = viewport_width
+        self.viewport_height = viewport_height
+        self.wait_time = wait_time  # Additional wait time in milliseconds
 
     async def _take_screenshot(self, file_path, output_path):
         browser = await launch(headless=self.headless)
         page = await browser.newPage()
+        await page.setViewport({'width': self.viewport_width, 'height': self.viewport_height})
         await page.goto(f'file://{os.path.abspath(file_path)}', waitUntil='networkidle0')  # Wait until the network is idle
-        await page.waitFor(10000)  # Additional wait time (in milliseconds) if needed
+
+        # Optional: Wait for specific elements to be visible
+        # await page.waitForSelector('img')  # Example: Wait for images to load
+
+        await page.waitFor(self.wait_time)  # Additional wait time (in milliseconds)
         await page.screenshot({'path': output_path, 'fullPage': True})
         await browser.close()
         return output_path

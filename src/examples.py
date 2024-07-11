@@ -1,10 +1,4 @@
-from sessions.session1 import gm_session1
-from sessions.session2 import gm_session2
-from sessions.session3 import gm_session3
-from sessions.session4 import gm_session4
-from sessions.session5 import gm_session5
-from sessions.session6 import gm_session6
-from sessions.session7 import gm_session7
+
 
 
 definition = """
@@ -49,8 +43,6 @@ title or other staff. Be precise and consider what you see
 """
 
 
-examples = [f"example{i} : {globals()[f'gm_session{i}']}" for i in range(1, 8)]
-examples = "\n\n\n\n".join(examples)
 
 
 starting_prompt =  definition + "\n\n" + asserttions

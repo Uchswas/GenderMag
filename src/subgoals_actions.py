@@ -1,63 +1,7 @@
 from constant import BASE_IMAGE_PATH
 
-TAG = "GOA"
-gm_moments = {
-    "scenario": "Abi has decided to submit a paper to ASE 2019 and doing all the pre-submission actions available on the website",
-    "persona" : "ABI",
-    "Subgoals": [
-        {
-            "subgoal": "Finding out what the conference is about",
-            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "why": "She wants to publish so she wants to see what’s in the site. Abi is task-motivated, she has a clear goal in mind, which is to publish a paper. Therefore, she would have a subgoal to find out what this conference is all about.",
-            "Actions": [
-                {
-                    "action": "Accept cookie on bottom of screen",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019HomePageCookie.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
-                    }
-                },
-                {
-                    "action": "Scroll down to see what other information is here",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
-                    }
-                },
-                {
-                    "action": "Click on research papers in ASE 2019 tracks (box)",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019ResearchPage.png",
-                    }
-                },
-                {
-                    "action": "Click on call for papers",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019ResearchPage.png",
 
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019ResearchPageCall.png",
-                    }
-                },
-            ]
-        }
-    ]
-}
+
 
 asserttions = """
 Do and Don't before answering a question: 
