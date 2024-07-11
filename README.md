@@ -43,7 +43,7 @@ You can make the repository public while running the sessions. While making your
 
 ### Alternative Solution:
 
-1. Copy all the image files to a permanent hosting location (e.g., another GitHub repository or a different hosting service).
+1. Copy all the image files to a permanent hosting location (e.g., another public GitHub repository only with those images or a different hosting service).
 2. Update the `BASE_IMAGE_PATH` variable in `constant.py` to reflect the new image folder link.
 
 ---
