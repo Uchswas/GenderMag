@@ -35,7 +35,7 @@
 
 
 
-## Accessibility of Images
+## Accessibility of the Images
 
 The images required for the GenderMag sessions are saved in the `html/images` folder. These images must be public so that the LLM can access them.
 
