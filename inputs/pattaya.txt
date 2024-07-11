@@ -84,11 +84,10 @@ gm_moments = {
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ICSE2019WeekAfter.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ICSE2019WeekAfter.png",
                     
                     }
                 }
             ]
         }
     ]
-}

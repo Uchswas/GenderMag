@@ -64,14 +64,14 @@ gm_moments = {
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019DistinAfter.png",
                     }
                 },
                 {
                     "action": "Explore the program: Go back to the main page to check tutorial",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019DistinAfter.png",
 
                     },
                     "after_action": {
@@ -81,7 +81,7 @@ gm_moments = {
                     }
                 },
                 {
-                    "action": "Click on one of the tutorial titles",
+                    "action": "Click on one of the tutorialfest link",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
