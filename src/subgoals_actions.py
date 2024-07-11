@@ -1,61 +1,61 @@
 from constant import BASE_IMAGE_PATH
 
-TAG="POMPANO"
+TAG = "HONOLULU"
 gm_moments = {
-    "scenario": "Abi (is Chinese citizen, lives in US (NOT a permanent resident)) has decided to go to ICSE and is looking into Travel Visa stuff now",
-    "persona": "ABI",
+    "scenario": "Abi wants to get started with the course",
     "Subgoals": [
         {
-            "subgoal": "Look for visa information in the conference website",
-            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "ICSE2019Home.png",
-            
+            "subgoal": "Find the Syllabus",
+            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "HomePage.png",
             "Actions": [
                 {
-                    "action": "Click attending",
+                    "action": "Click on Syllabus",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Home.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "HomePage.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
                     }
-                },
+                }
+            ]
+        },
+        {
+            "subgoal": "Read the Syllabus",
+            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
+            "Actions": [
                 {
-                    "action": "Click on Visa",
+                    "action": "Click on Syllabus(PDF)",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019CLICKATT.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingonSyllabus.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.png",
                     }
-                },
-                                {
-                "action": "Click on Visa Overview",
+                }
+            ]
+        },
+        {
+            "subgoal": "Read information under Modules",
+            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "AfterclickingSyllabusPDF.png",
+            "Actions": [
+                {
+                    "action": "Click on Modules",
                     "before_action": {
                         "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "AfterclickingSyllabus.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Modules.png",
                     }
-                },
-                # Ignoring this question. Cz Canadian Visa page is updated and we didn't find the excat version
-                # {
-                #     "action": "Read the visa invitation letter",
-                #     "before_action": {
-                #         "question": "Will ABI know what to do at this step? Why?",
-                #         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019VisaOverview.png",
-                #     },
-                #     "after_action": {
-                #         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                #         "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Visa.png",
-                #     }
-                # }
+                }
             ]
         }
     ]
