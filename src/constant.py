@@ -1,1 +1,1 @@
-BASE_IMAGE_PATH = "https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/"
+BASE_IMAGE_PATH = "https://raw.githubusercontent.com/Uchswas/GenderMagImages/main/"
