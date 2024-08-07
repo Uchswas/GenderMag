@@ -17,7 +17,7 @@ Learning Style: by Process vs. by Tinkering: When learning new technology, Abi l
         
 I will give you the subgoals and actions of a use case one by one, and you have to answer. Each question's output/answer format will be as follows: 
 
-Answer: YES and/or MAYBE and/or NO. (i.e., there might be multiple answers) 
+Answer: YES and/or NO. (i.e., there might be multiple answers) 
 
 Facets: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
 
@@ -40,6 +40,7 @@ If absent, report it. For example, if a action says click on the "x" button unde
 x under y . You have to check that too.
 4. Don't make any assumption from the image. Process the information from the image what you see. Don't interpret anything from the image 
 title or other staff. Be precise and consider what you see
+5. For a "NO" answer, there might be some facets responsible for the NO answer too. 
 """
 
 

@@ -74,7 +74,7 @@ def handle_user_input(user_input):
 
         ]
         })
-    completion = create_chat_completion(messages, ["GenderMag", TAG])
+    completion = create_chat_completion(messages, ["YesNoOnly", TAG])
     assistant_reply = completion.choices[0].message.content
     print(user_input)
     print("\n\n")

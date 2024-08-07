@@ -1,0 +1,154 @@
+
+    "TAG": "KOLKATA",
+    "gm_moments": {
+        "scenario": "Add information to the README",
+        "Subgoals": [
+            {
+                "subgoal": "Find the README",
+                "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+                "subgoal_page_image": "dummy_image_path/READMEHomePage.png",
+                "Actions": [
+                    {
+                        "action": "Scroll down to read",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/READMEHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterScrollingREADME.png"
+                        }
+                    },
+                    {
+                        "action": "Scroll down to read",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/READMEHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterScrollingREADME.png"
+                        }
+                    },
+                    {
+                        "action": "Click on README.md",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/READMEHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingREADME.png"
+                        }
+                    },
+                    {
+                        "action": "Click on README.md",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/READMEHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingREADME.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "subgoal": "Find out how to edit it",
+                "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+                "subgoal_page_image": "dummy_image_path/AfterClickingREADME.png",
+                "Actions": [
+                    {
+                        "action": "Click the pencil button",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingREADME.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingPencil.png"
+                        }
+                    },
+                    {
+                        "action": "Click the pencil button",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingREADME.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingPencil.png"
+                        }
+                    },
+                    {
+                        "action": "Edit the file",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingPencil.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterEditingFile.png"
+                        }
+                    },
+                    {
+                        "action": "Edit the file",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingPencil.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterEditingFile.png"
+                        }
+                    },
+                    {
+                        "action": "Click 'preview change'",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterEditingFile.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterPreviewChange.png"
+                        }
+                    },
+                    {
+                        "action": "Click 'preview change'",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterEditingFile.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterPreviewChange.png"
+                        }
+                    },
+                    {
+                        "action": "Click 'Propose File Change'",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterPreviewChange.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterProposingChange.png"
+                        }
+                    },
+                    {
+                        "action": "Click 'Propose File Change'",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterPreviewChange.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterProposingChange.png"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+

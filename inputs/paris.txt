@@ -1,0 +1,110 @@
+
+    "TAG": "PARIS",
+    "gm_moments": {
+        "scenario": "Contribute to the README",
+        "Subgoals": [
+            {
+                "subgoal": "Finding information about how to contribute",
+                "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+                "subgoal_page_image": "dummy_image_path/ContributeInfoPage.png",
+                "Actions": [
+                    {
+                        "action": "Scroll down and read the README",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/ContributeInfoPage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingREADME.png"
+                        }
+                    },
+                    {
+                        "action": "Click 'contribute' link",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/ContributeInfoPage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingContributeLink.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "subgoal": "Edit the README file",
+                "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+                "subgoal_page_image": "dummy_image_path/READMEPage.png",
+                "Actions": [
+                    {
+                        "action": "Clicking the back button",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/READMEPage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingBack.png"
+                        }
+                    },
+                    {
+                        "action": "Click the README.md in the file list",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/READMEPage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingREADME.png"
+                        }
+                    },
+                    {
+                        "action": "Click an editing icon",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingREADME.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingEditIcon.png"
+                        }
+                    },
+                    {
+                        "action": "Change file (copy and paste)",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingEditIcon.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterEditingFile.png"
+                        }
+                    },
+                    {
+                        "action": "Submitting the file changes",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterEditingFile.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterSubmittingChanges.png"
+                        }
+                    },
+                    {
+                        "action": "Create a pull request",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterSubmittingChanges.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterCreatingPullRequest.png"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+

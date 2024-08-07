@@ -1,0 +1,124 @@
+
+    "TAG": "DELHI",
+    "gm_moments": {
+        "scenario": "Find something to contribute to Jabref",
+        "Subgoals": [
+            {
+                "subgoal": "Read the available information",
+                "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+                "subgoal_page_image": "dummy_image_path/InformationHomePage.png",
+                "Actions": [
+                    {
+                        "action": "Read the available information",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/InformationHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingInformation.png"
+                        }
+                    },
+                    {
+                        "action": "Read the available information",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/InformationHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingInformation.png"
+                        }
+                    },
+                    {
+                        "action": "Clicking 'Learn how to help.'",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/InformationHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingLearnHowToHelp.png"
+                        }
+                    },
+                    {
+                        "action": "Clicking 'Learn how to help.'",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/InformationHomePage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingLearnHowToHelp.png"
+                        }
+                    },
+                    {
+                        "action": "Read the page",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingLearnHowToHelp.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingPage.png"
+                        }
+                    },
+                    {
+                        "action": "Read the page",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingLearnHowToHelp.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingPage.png"
+                        }
+                    },
+                    {
+                        "action": "Click https://github.com/JabRef/jabref/labels/good%20first%20issue",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterReadingPage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingFirstIssue.png"
+                        }
+                    },
+                    {
+                        "action": "Click https://github.com/JabRef/jabref/labels/good%20first%20issue",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterReadingPage.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterClickingFirstIssue.png"
+                        }
+                    },
+                    {
+                        "action": "Read the options and click something she wants to know more about",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingFirstIssue.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingOptions.png"
+                        }
+                    },
+                    {
+                        "action": "Read the options and click something she wants to know more about",
+                        "before_action": {
+                            "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                            "page_image_on_which_abi_take_the_action": "dummy_image_path/AfterClickingFirstIssue.png"
+                        },
+                        "after_action": {
+                            "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                            "page_image_on_which_abi_is_after_the_action": "dummy_image_path/AfterReadingOptions.png"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
