@@ -1,83 +1,59 @@
 from constant import BASE_IMAGE_PATH
 
 
-TAG ="ROME"
-gm_moments= {
-    "scenario": "File an issue to have a merge request template",
+TAG =  "CHENNAI",
+gm_moments =  {
+    "scenario": "Find an issue to solve",
     "Subgoals": [
         {
-            "subgoal": "Find information about how to file an issue",
+            "subgoal": "Find the list of issues",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "subgoal_page_image": BASE_IMAGE_PATH + "Flohomepage.png",
             "Actions": [
                 {
-                    "action": "Read the readme",
+                    "action": "Hover over Issues and click on List",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "Flohomepage.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "Flohomepage.png",
-                    }
-                },
-                {
-                    "action": "Click on the contribute.md",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Flohomepage.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "Flocontribute.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
                     }
                 }
             ]
         },
         {
-            "subgoal": "File the issue",
+            "subgoal": "Find the most appropriate issue to solve",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "Flocontribute.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "FloIssueList136.png",
             "Actions": [
                 {
-                    "action": "Go to the list of issues",
+                    "action": "Read through issues to see if there’s an appropriate issue",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "Flocontribute.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "MOCKIssueList.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
                     }
                 },
                 {
-                    "action": "Click 'new issue'",
+                    "action": "Click on issue #136",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueCreate.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FLOAFTERCLICK136CLICK.png"
                     }
                 },
-                {
-                    "action": "Fill out the form and submit the issue",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueCreate.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloAfterIsuueCreate.png"
-                    }
-                }
             ]
         }
     ]
 }
-
-
 
 
 
