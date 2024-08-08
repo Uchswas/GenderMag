@@ -1,0 +1,286 @@
+Do you change the Tag in requesta and change the before question AND CHANGE THE HMTL TO PNG? If so, Press Y to proceed https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+Scenario: Add information to the README
+Subgoal: Find the README
+Question: Will Abi have formed this sub-goal as a step to their overall goal?
+Subgoal Page Image: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: Abi's overall goal is to add information to the README. The image shows a GitHub repository page with a list of files, including a README.md file at the bottom. Given Abi's motivation to accomplish their task and their comprehensive information processing style, they would likely recognize the README.md file as the document they need to edit. The presence of the README.md file in the file list directly supports this sub-goal.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+Scenario: Add information to the README
+Subgoal: Find the README
+Current Action: Scroll down to read
+Before Action Question: Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: The page displays a list of files in the repository, and the README.md file is visible at the bottom of the list. Abi's motivation to accomplish their task and their comprehensive information processing style would lead them to scroll down to read the file list thoroughly. The presence of the README.md file at the bottom of the list provides a clear indication that scrolling down is necessary to locate it.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+Scenario: Add information to the README
+Subgoal: Find the README
+Current Action: Scroll down to read
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: After scrolling down, Abi will see the README.md file listed at the bottom of the file list. This visual confirmation will indicate to Abi that they have found the README file, thus making progress toward their goal of adding information to it. The clear presence of the README.md file reassures Abi that they are on the right track.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+Scenario: Add information to the README
+Subgoal: Find the README
+Current Action: Click on README.md
+Before Action Question: Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefHomepage.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: The README.md file is clearly listed at the bottom of the file list on the page. Abi, motivated to add information to the README, will recognize that clicking on the README.md file is the next logical step. The file name is prominently displayed, and it is a common convention on GitHub to click on file names to view or edit their contents. This clear indication aligns with Abi's comprehensive information processing style, making it evident that clicking on the README.md file is the correct action to take.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefReadMe.png
+Scenario: Add information to the README
+Subgoal: Find the README
+Current Action: Click on README.md
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefReadMe.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: After clicking on the README.md file, Abi will be taken to a page displaying the contents of the README file. This page clearly shows the README content, confirming to Abi that they have successfully accessed the file they need to edit. The presence of the README content reassures Abi that they are making progress toward their goal of adding information to the README. This aligns with Abi's motivation to complete their task and their comprehensive information processing style, as they can see the detailed content they need to work with.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefReadMe.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Question: Will Abi have formed this sub-goal as a step to their overall goal?
+Subgoal Page Image: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefReadMe.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: Abi's overall goal is to add information to the README. After finding and viewing the README.md file, the next logical step is to figure out how to edit it. Abi's motivation to complete their task and their comprehensive information processing style would lead them to form this sub-goal. They need to understand the process of editing the file to proceed with their task, making this a necessary step in their workflow.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefReadMe.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Current Action: Click the pencil button
+Before Action Question: Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefReadMe.png
+
+
+
+
+Answer: NO
+
+Facets: 4. Computer Self-Efficacy, 5. Learning Style
+
+Why: The page does not provide any explicit instructions or indications to click the pencil button to edit the README.md file. Abi, who has low confidence in performing unfamiliar computing tasks and prefers process-oriented learning, might not immediately recognize the pencil icon as the edit button. Without clear instructions or labels, Abi may not know that clicking the pencil button is the correct action to take to edit the README.md file.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterClicklingpencil.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Current Action: Click the pencil button
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterClicklingpencil.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: After clicking the pencil button, Abi will be taken to an editing interface where the contents of the README.md file are displayed in an editable format. This clear transition to an editable text area confirms to Abi that they have done the right thing and are making progress toward their goal of adding information to the README. The presence of editing options and the ability to modify the text directly aligns with Abi's motivation to complete their task and their comprehensive information processing style, providing clear feedback that they are on the right track.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterClicklingpencil.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Current Action: Edit the file
+Before Action Question: Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterClicklingpencil.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: The page displays the README.md file in an editable text area, which is a clear indication that Abi can now edit the file. The presence of the text cursor and the editable content area makes it evident that Abi can start typing to make changes. Abi's motivation to add information to the README and their comprehensive information processing style will guide them to recognize that they can now proceed with editing the file. The interface is straightforward and familiar for text editing, providing the necessary cues for Abi to take this action.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterEdit.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Current Action: Edit the file
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterEdit.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: After editing the file, Abi will see their changes reflected in the text area. This immediate visual feedback confirms that they have successfully made edits to the README.md file. Abi's motivation to add information to the README and their comprehensive information processing style will help them recognize that seeing their changes in the text area means they are making progress toward their goal. The editable interface and the visible changes provide clear confirmation that Abi is on the right track.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterEdit.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Current Action: Click 'preview change'
+Before Action Question: Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?or Is there any clear instruction/ indication in the page to do this action
+Page Image on which the action would take: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterEdit.png
+
+
+
+
+Answer: NO
+
+Facets: 4. Computer Self-Efficacy, 5. Learning Style
+
+Why: The page does not provide any explicit instructions or indications to click a "preview change" button. The interface shows an "Edit" button, but there is no clear "Preview" button visible in the image. Abi, who has low confidence in performing unfamiliar computing tasks and prefers process-oriented learning, might not immediately know that they need to preview their changes. Without clear instructions or labels, Abi may not know that previewing changes is a necessary step before committing them.
+
+
+
+
+
+
+
+
+
+https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterclickingpreview.png
+Scenario: Add information to the README
+Subgoal: Find out how to edit it
+Current Action: Click 'preview change'
+After Action Question: If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?
+Page Image on which ABI will land after taking the action: https://raw.githubusercontent.com/Uchswas/GenderMag/main/html-folder/images/JabrefAfterclickingpreview.png
+
+
+
+
+Answer: YES
+
+Facets: 1. Motivations, 2. Information Processing Style
+
+Why: After clicking 'preview change,' Abi will see a rendered view of the README.md file with their edits included. This visual confirmation that their changes are correctly formatted and displayed will indicate to Abi that they have done the right thing and are making progress toward their goal. The ability to see the final appearance of their edits aligns with Abi's motivation to complete their task and their comprehensive information processing style, providing clear feedback that they are on the right track.
+
+
+
+
+
+
+
+
+
