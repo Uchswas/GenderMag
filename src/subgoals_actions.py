@@ -1,74 +1,93 @@
 from constant import BASE_IMAGE_PATH
 
-TAG = "DHAKA"
+TAG =  "KOLKATA",
 gm_moments =  {
-    "scenario": "Create a new issue",
+    "scenario": "Add information to the README",
     "Subgoals": [
         {
-            "subgoal": "Find issue tracker",
+            "subgoal": "Find the README",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "subgoal_page_image": BASE_IMAGE_PATH + "JabrefHomepage.png",
             "Actions": [
                 {
-                    "action": "Click on 'Issues' link",
+                    "action": "Scroll down to read",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
                         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefIssueList.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
                     }
                 },
                 {
-                    "action": "Click the 'New Issue' button",
+                    "action": "Click on README.md",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefIssueList.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefIsuueGetStarted.png"
-                    }
-                },
-                {
-                    "action": "Click the button 'Get Started' for 'Bug Report'",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefIsuueGetStarted.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Jabrefbugreportform.png"
-                    }
-                },
-                {
-                    "action": "Fill out the Bug Report form",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Jabrefbugreportform.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "JabrefBugReportFill.png"
-                    }
-                },
-                {
-                    "action": "Click the button 'Submit new issue'",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "JabrefBugReportFill.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefBugsubmit.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefReadMe.png"
                     }
                 }
+            ]
+        },
+        {
+            "subgoal": "Find out how to edit it",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image": BASE_IMAGE_PATH + "JabrefReadMe.png",
+            "Actions": [
+                {
+                    "action": "Click the pencil button",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefReadMe.png"
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefAfterClicklingpencil.png"
+                    }
+                },
+                {
+                    "action": "Edit the file",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefAfterClicklingpencil.png"
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefAfterEdit.png"
+                    }
+                },
+            
+                {
+                    "action": "Click 'preview change'",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefAfterEdit.png"
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefAfterclickingpreview.png"
+                    }
+                },
+                # {
+                #     "action": "Click 'Propose File Change'",
+                #     "before_action": {
+                #         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                #         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
+                #     },
+                #     "after_action": {
+                #         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                #         "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
+                #     }
+                # },
+
             ]
         }
     ]
 }
-
 asserttions = """
 Do and Don't before answering a question: 
 
