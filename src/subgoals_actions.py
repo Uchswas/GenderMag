@@ -1,53 +1,64 @@
 from constant import BASE_IMAGE_PATH
 
 
-TAG="CORVALLIS"
-gm_moments= {
-    "scenario": "Make a documentation contribution",
+TAG="PITTSBURG"
+gm_moments =  {
+    "scenario": "Find an issue to work on",
     "Subgoals": [
         {
-            "subgoal": "Find information about documentation contributions",
+            "subgoal": "Find list of issues/where issues are",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image":  BASE_IMAGE_PATH + "Flohomepage.png",
+            "subgoal_page_image":  BASE_IMAGE_PATH + "MOCKHomepage.png",
             "Actions": [
                 {
-                    "action": "Search for documentation",
+                    "action": "Scroll down the webpage",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "Flohomepage.png"
+                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "MOCKHomepage.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Flohomepage.png"
+                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "MOCKHomepage.png"
+                    }
+                },
+                {
+                    "action": "Click on the issue icon on the left side",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKHomepage.png"
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
                     }
                 }
             ]
         },
         {
-            "subgoal": "Make a documentation contribution to the first .md file",
+            "subgoal": "Selecting an issue to work on",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "Flohomepage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "MOCKIssueList.png",
             "Actions": [
                 {
-                    "action": "Click on the first          .md file ",
+                    "action": "Read through the list",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Flohomepage.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloAfterClickFirstmd.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
                     }
                 },
                 {
-                    "action": "Click on edit button",
+                    "action": "Select/click on an issue",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloAfterClickFirstmd.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+ "Floissuedetails.png"
                     }
                 }
             ]
