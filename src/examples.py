@@ -31,16 +31,17 @@ asserttions = """
 Do and Don't before answering question:
 
 Here are a few facts you must consider before answering a question.
+Findings 👍
 
-1. Read all the text on the page to determine if the action/goal instruction is explicitly mentioned in the text which might help ABI to do the action.
-2. Don't think ahead of time. Just look at the page. See if the page instruct her to do the action/ the page is good enough so that abi can do the action easily. 
-like any text or link has the instruction to click, she will click and do the action
-3. Don't Assume anything from the action description. If a action says anything that exists in the page, that might not be present in the page.
-If absent, report it. For example, if a action says click on the "x" button under "y", it is possible that there is no button under 
-x under y . You have to check that too.
-4. Don't make any assumption from the image. Process the information from the image what you see. Don't interpret anything from the image 
-title or other staff. Be precise and consider what you see
-5. For a "NO" answer, there might be some facets responsible for the NO answer too. 
+1. Read all the text on the page to determine if the action/goal instruction is explicitly mentioned, which might help ABI do the action.
+2. Sometimes, don’t be optimistic about the description of the action because ABI is not instructed to do the action explicitly. It is mainly dependent on two things. First, will ABI  take action to achieve her goal at the current stage? Second, is the page good enough, and do you have instructions on how to take action? 
+3.Scrolling down a page / going back to a page aligns with ABI’s Information Processing Style, though it is not explicitly instructed.
+4.After scrolling, your answer should be based on the following: Did she get her relevant information, OR will ABI get the feeling that she is going towards her goal?
+5.After clicking on a link/button, you should take into consideration that she landed on the right page. If not, it is negative.
+6.Take into consideration that ABI is not overwhelmed with the information on a Page. If so, it is negative.
+7.Some technical jargon/icons might be unknown to ABI as ABI’s computer self-efficacy is not good. 
+
+
 """
 
 

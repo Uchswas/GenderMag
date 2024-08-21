@@ -1,7 +1,7 @@
 from constant import BASE_IMAGE_PATH
 
 
-TAG =  "CHENNAI",
+TAG="CHENNAI"
 gm_moments =  {
     "scenario": "Find an issue to solve",
     "Subgoals": [
