@@ -36,7 +36,7 @@ Findings 👍
 1. Read all the text on the page to determine if the action/goal instruction is explicitly mentioned, which might help ABI do the action.
 2. Sometimes, don’t be optimistic about the description of the action because ABI is not instructed to do the action explicitly. It is mainly dependent on two things. First, will ABI  take action to achieve her goal at the current stage? Second, is the page good enough, and do you have instructions on how to take action? 
 3. Clicking on something without getting information is tinkering, which is not ABIs facet. SO is it negetive.
-4. After scrolling, your answer should be based on the following: Did she get her relevant information, OR will ABI get the feeling that she is going towards her goal?
+4. After scrolling, your answer should be based on the following: Did she get her relevant information? If not, Its negetive
 5. After clicking on a link/button, you should take into consideration that she landed on the right page. If not, it is negative.
 6. Take into consideration that ABI is not overwhelmed with too much information on a Page. A good number of infomation is okay and good for ABI. But If it is huge, it is negative.
 7. Some technical jargon/icons might be unknown to ABI as ABI’s computer self-efficacy is not good. 
