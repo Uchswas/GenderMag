@@ -1,74 +1,29 @@
 from constant import BASE_IMAGE_PATH
 
-
-TAG="CHENNAI"
-gm_moments =  {
-    "scenario": "Find an issue to solve",
+TAG="RALEIGH"
+gm_moments = {
+    "scenario": "Set up the environment",
     "Subgoals": [
         {
-            "subgoal": "Find the list of issues",
+            "subgoal": "Gather more information on setting up the environment",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
             "subgoal_page_image": BASE_IMAGE_PATH + "Flohomepage.png",
             "Actions": [
                 {
-                    "action": "Hover over Issues and click on List",
+                    "action": "Scrolling to find information about this subgoal",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Flohomepage.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloHomepageBeforeBuild.png"
                     }
                 }
-            ]
-        },
-        {
-            "subgoal": "Find the most appropriate issue to solve",
-            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "FloIssueList136.png",
-            "Actions": [
-                {
-                    "action": "Read through issues to see if there’s an appropriate issue",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
-                    }
-                },
-                {
-                    "action": "Click on issue #136",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FLOAFTERCLICK136CLICK.png"
-                    }
-                },
             ]
         }
     ]
 }
-
-
-
-asserttions = """
-Do and Don't before answering a question: 
-
-Here are a few facts you must consider before answering a question.
-
-1. Read all the text on the page to check if something is mentioned explicitly, which might help ABI do the action.
-2. Don't think ahead of time. Just look at the page. See if the page instructs her to take action or Is the page good enough for Abi to take action? 
-3. Remember to Assume something from the action description. If an action says anything that exists on the page, that might not be present on the page. For example, if an action says to click on the "x" button under "y," it is possible that there is no button under x under y. You have to check that, too. 
-4. Don't make any assumptions from the image. Process the information from the picture that you see. Refrain from interpreting anything from the image title or other staff. Be precise and consider what you see
-
-"""
-
 
 def generate_strings(gm_moments):
     result = []
