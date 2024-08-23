@@ -1,60 +1,43 @@
 from constant import BASE_IMAGE_PATH
 TYPE="SINGLE"
 
-TAG="CHENNAI"
-gm_moments =  {
-    "scenario": "Find an issue to solve",
+
+
+TAG="Lincoln"
+gm_moments = {
+    "scenario": "File an issue",
     "Subgoals": [
         {
-            "subgoal": "Find the list of issues",
+            "subgoal": "Find information about filing an issue",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "Flohomepage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "MOCKHomepage.png",
             "Actions": [
                 {
-                    "action": "Hover over Issues and click on List",
+                    "action": "Click on issue button on the side",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKHomepage.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
+                    }
+                },
+                {
+                    "action": "Click on the green new issue button",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "MOCKISSUECREATE.png"
                     }
                 }
-            ]
-        },
-        {
-            "subgoal": "Find the most appropriate issue to solve",
-            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "FloIssueList136.png",
-            "Actions": [
-                {
-                    "action": "Read through issues to see if there’s an appropriate issue",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
-                    }
-                },
-                {
-                    "action": "Click on issue #136",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueList136.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FLOAFTERCLICK136CLICK.png"
-                    }
-                },
             ]
         }
     ]
 }
-
 
 
 def generate_strings(gm_moments):

@@ -50,7 +50,7 @@ def create_chat_completion(messages, tags):
         model="gpt-4o",
         messages=messages,
         pl_tags=tags,
-        temperature = 0
+        temperature = .7
     )
     return response
 
