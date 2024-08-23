@@ -28,27 +28,33 @@ Details of the image: Explain what you see in the picture and what is in the ima
 """
 
 asserttions = """
-Do and Don't before answering question:
+Do and Don't before answering question.Here are a few facts you must consider before answering a question.
 
-Here are a few facts you must consider before answering a question.
-Findings 👍
+For anwering Subgoals:
+* Subgoals are done in the head, while actions are done with the fingers. So you have to consider whether it is motivated to achieve this subgoal.
 
-1. Read all the text on the page to determine if the action/goal instruction is explicitly mentioned, which might help ABI do the action.
-2. Sometimes, don’t be optimistic about the description of the action because ABI is not instructed to do the action explicitly. It is mainly dependent on two things. First, will ABI  take action to achieve her goal at the current stage? Second, is the page good enough, and do you have instructions on how to take action? 
-3. Clicking on something without getting information is tinkering, which is not ABIs facet. SO is it negetive.
-4. After scrolling, your answer should be based on the following: Did she get her relevant information? If not, Its negetive
-5. After clicking on a link/button, you should take into consideration that she landed on the right page. If not, it is negative.
-6. Take into consideration that ABI is not overwhelmed with too much information on a Page. A good number of infomation is okay and good for ABI. But If it is huge, it is negative.
-7. Some technical jargon/icons might be unknown to ABI as ABI’s computer self-efficacy is not good. 
-8. Answer is Maybe when there is a change ABI might do the thing and there is a change that ABI might not do the thing
-9. Scrolling down a page / going back to a page aligns with ABI’s Information Processing Style, though it is not explicitly instructed.
-10 Subgoals are done in the head, while actions are done with the fingers. 
+For answering before Action Questions:
+* Read all the text on the page to determine if the action/goal instruction is explicitly mentioned, which might help ABI do the action.
+* Sometimes, don't be optimistic about the action description because ABI is not instructed to do the action explicitly. 
+* Clicking on something without getting information is tinkering, which is not an ABI facet. So, it is a negative
+* Some technical names/jargon/icons might be unknown to ABI as ABI's computer self-efficacy is not good. So, it is a negative
+* Scrolling down a page / going back to a page aligns with ABI's Information Processing Style, though it is not explicitly instructed.
+
+For answering after Action Questions:
+
+* After scrolling, If the information is not present OR very difficult to process the information, then it is a NO
+*  After clicking on a link/button, you should take into consideration that she landed on the right page. If not, it is negative.
+* Consider that ABI is not overwhelmed with too much information on a Page. A good amount of information is okay and good for ABI. But If it is huge, it is negative.
+
+Overall :
+*Answer is negative/a No if ABI is not motivated to do the task/ difficult to find or do the task
+*  The answer is a MAYBE when there are some changes, ABI might do the thing, and when there are some changes too, that might refrain ABI from doing the task.
 """
 
 
 
 
-starting_prompt =  definition + "\n\n" + asserttions
+starting_prompt =  definition + "\n\n" 
 
 
 

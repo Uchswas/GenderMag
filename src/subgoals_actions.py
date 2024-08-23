@@ -7,13 +7,13 @@ gm_moments = {
         {
             "subgoal": "Gather more information on setting up the environment",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "Flohomepage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "FloHomepageBeforeBuild.png",
             "Actions": [
                 {
                     "action": "Scrolling to find information about this subgoal",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Flohomepage.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloHomepageBeforeBuild.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
