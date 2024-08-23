@@ -2,11 +2,11 @@ from openai import OpenAI
 from promptlayer import PromptLayer
 from dotenv import load_dotenv
 import os
-from subgoals_actions import strings_to_iterate_over, TAG
+from subgoals_actions import strings_to_iterate_over, TAG, TEMP
 from examples import starting_prompt
 import re
 import sys
-
+global count 
 
 parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(parent_directory)
@@ -74,7 +74,7 @@ def handle_user_input(user_input):
 
         ]
         })
-    completion = create_chat_completion(messages, ["YesNoOnly", TAG])
+    completion = create_chat_completion(messages, ["YesNoOnly", TAG, TEMP])
     assistant_reply = completion.choices[0].message.content
     print(user_input)
     print("\n\n")
@@ -83,12 +83,16 @@ def handle_user_input(user_input):
     print("\n\n")
     print("\n\n")
     messages.append({"role": "assistant", "content": assistant_reply})
+    
 
 
 user_answer = input("Do you change the Tag in requesta and change the before question AND CHANGE THE HMTL TO PNG? If so, Press Y to proceed ")
 if user_answer == 'y' or user_answer == 'Y':
+    count = 1
     for user_input in strings_to_iterate_over:
+        print(count)
         handle_user_input(user_input)
+        count = count + 1
 else:
     print("Do it")
 
