@@ -13,26 +13,15 @@ Learning Style: by Process vs. by Tinkering: When learning new technology, Abi l
 
         
 I will give you the subgoals and actions of a use case one by one, and you have to answer. Each question's output/answer format will be as follows: 
-For each question, kindly give me top three answer. 
 
-Answer1: YES or Maybe or NO. 
+Answer: YES or Maybe or NO. 
 
-Facets1: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
+Facets: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
 
-Why1: short justification of the answer and facets 
+Why: short justification of the answer and facets 
 
 
-Answer2: YES or Maybe or NO. 
 
-Facets2: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
-
-Why2: short justification of the answer and facets 
-
-Answer3: YES or Maybe or NO. 
-
-Facets3: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
-
-Why3: short justification of the answer and facets 
 
 
 Details of the image: Explain what you see in the picture and what is in the image
@@ -58,7 +47,7 @@ For answering after Action Questions:
 
     * After scrolling, If the information is not present OR very difficult to process the information  , then it is a NO, as ABI is not that technically efficient
     * After clicking on a link/button, you should take into consideration that she landed on the right page. If not, it is negative.
-    * Consider that ABI is not overwhelmed with too much information on a Page. A good amount of information is okay and good for ABI. But If it is huge, it is negative.
+    * Consider that ABI is not overwhelmed with too much information on a Page. A good amount of revelant information is okay and good for ABI. But If it is huge and not relevant, it is negative.
     * Verify by reading the text that she will get all information. If not or partial information or just a over slight overview, It a negetive
 
 Overall :

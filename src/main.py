@@ -2,7 +2,7 @@ from openai import OpenAI
 from promptlayer import PromptLayer
 from dotenv import load_dotenv
 import os
-from subgoals_actions import strings_to_iterate_over, TAG, TEMP
+from subgoals_actions import strings_to_iterate_over, TAG, TYPE
 from examples import starting_prompt
 import re
 import sys
@@ -74,7 +74,7 @@ def handle_user_input(user_input):
 
         ]
         })
-    completion = create_chat_completion(messages, ["YesNoOnly", TAG, TEMP])
+    completion = create_chat_completion(messages, ["YesNoOnly", TAG, TYPE])
     assistant_reply = completion.choices[0].message.content
     print(user_input)
     print("\n\n")

@@ -1,4 +1,4 @@
-TAG =  "KOLKATA",
+TAG =  "KOLKATA"
 gm_moments =  {
     "scenario": "Add information to the README",
     "Subgoals": [

@@ -1,40 +1,72 @@
 from constant import BASE_IMAGE_PATH
-TEMP ="SINGLE0"
-TAG="Lincoln"
+TYPE="SINGLE"
+
+TAG = "MIAMI"
 gm_moments = {
-    "scenario": "File an issue",
+    "scenario": "Abi wants to submit Assignment 7",
     "Subgoals": [
         {
-            "subgoal": "Find information about filing an issue",
+            "subgoal": "Find assignment 7",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "MOCKHomepage.png",
+            "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
             "Actions": [
                 {
-                    "action": "Click on issue button on the side",
+                    "action": "Click on assignment 7 link under Coming up section (Before)",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKHomepage.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
+                     
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Assignment7.png",
                     }
                 },
                 {
-                    "action": "Click on the green new issue button",
+                    "action": "Click on Github link (Before)",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "MOCKISSUECREATE.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"AfterclickingGithub.png",
+                    }
+                }
+            ]
+        },
+        {
+            "subgoal": "Go to Gradescope to submit assignment",
+            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
+            "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
+            "Actions": [
+                {
+                    "action": "Click on assignment 7 link under Coming up section",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                    }
+                },
+                {
+                    "action": "Click on load assignment 7 for submission",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Afterclickingload.png",
                     }
                 }
             ]
         }
     ]
 }
+
 
 
 def generate_strings(gm_moments):
