@@ -13,7 +13,7 @@ Learning Style: by Process vs. by Tinkering: When learning new technology, Abi l
 
         
 I will give you the subgoals and actions of a use case one by one, and you have to answer. Each question's output/answer format will be as follows: 
-
+You have to give me three answer for each questions:
 Answer: YES or Maybe or NO. 
 
 Facets: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
@@ -35,12 +35,12 @@ For anwering Subgoals:
  * Subgoals are done in the head, while actions are done with the fingers. So you have to consider whether it is motivated to complete this subgoal.
  * Subgoals are dependent more on the User's perspective. It's like -  Will ABI have considered this a step toward achieving the overall use case?"
 For answering before Action Questions:
- * Some basic tasks like scrolling down align with ABI's information processing style facets. So it is a Yes, though not explicitly mentioned on the page
+ * Scrolling down align with ABI's information processing style facets. So it is a Yes, though not explicitly mentioned on the page
  * Read all the text on the page to determine if the action instruction/information is mentioned, which might help ABI do the action.
  * Sometimes, don't be optimistic or say a Yes from the action description because ABI is not explicitly instructed to do the action. It is more about - Whether will ABI do the action on the page now rather than doing/clicking other stuff.
  * Clicking anything without an idea about what might be on the new page is tinkering, which doesn't align with ABI's facets. So, It is a negative 
  * Some technical names/jargon/icons might be unknown to ABI as ABI's computer self-efficacy is not good. So, it is a negative
- * Take into consideration that ABI will not tinker as she is scared of clicking unknown stuff.
+ * Take into consideration that ABI will not tinker as she is scared of clicking unknown stuff. So she will be confused about clicking any buttion/link without any information on the page what it could done.
 
 
 
