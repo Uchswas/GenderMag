@@ -75,7 +75,7 @@ def generate_strings(gm_moments):
     for subgoal_info in gm_moments["Subgoals"]:
         subgoal_string = f"Scenario: {scenario}\n"
         subgoal_string += f"Subgoal: {subgoal_info['subgoal']}\n"
-        subgoal_string += f"Question: {subgoal_info['question']}\n"
+        subgoal_string += f"Question: Will ABI have thought of this as a step toward achieving the overall use case?\n"
         subgoal_string += f"Subgoal Page Image: {subgoal_info['subgoal_page_image']}\n"
         result.append(subgoal_string)
         

@@ -29,30 +29,31 @@ Details of the image: Explain what you see in the picture and what is in the ima
 """
 
 asserttions = """
-Do and Don't before answering question.Here are a few facts you must consider before answering a question.
+Do and Don't before answering questions. Here are a few facts you must consider before answering a question.
 
 For anwering Subgoals:
-    * Subgoals are done in the head, while actions are done with the fingers. So you have to consider whether it is motivated to achieve this subgoal.
-
+ * Subgoals are done in the head, while actions are done with the fingers. So you have to consider whether it is motivated to complete this subgoal.
+ * Subgoals are dependent more on the User's perspective. It's like -  Will ABI have considered this a step toward achieving the overall use case?"
 For answering before Action Questions:
-    * Some basic tasks like scrolling downs scrolling is aling to ABI's facets Information Processing Style. So it is a Yes , though not explictly mentioned in the page
-    * Read all the text on the page to determine if the action/goal instruction is mentioned, which might help ABI do the action.
-    * Sometimes, don't be optimistic about the action description because ABI is not instructed to do the action explicitly. 
-    * Clicking on something without getting any information is tinkering, which is not an ABI facet. So, it is a negative
-    * Some technical names/jargon/icons might be unknown to ABI as ABI's computer self-efficacy is not good. So, it is a negative
-    * Take into consideration that ABI will not tinker as she is scared of clicking unknown stuff.
+ * Some basic tasks like scrolling down align with ABI's information processing style facets. So it is a Yes, though not explicitly mentioned on the page
+ * Read all the text on the page to determine if the action instruction/information is mentioned, which might help ABI do the action.
+ * Sometimes, don't be optimistic or say a Yes from the action description because ABI is not explicitly instructed to do the action. It is more about - Whether will ABI do the action on the page now rather than doing/clicking other stuff.
+ * Clicking anything without an idea about what might be on the new page is tinkering, which doesn't align with ABI's facets. So, It is a negative 
+ * Some technical names/jargon/icons might be unknown to ABI as ABI's computer self-efficacy is not good. So, it is a negative
+ * Take into consideration that ABI will not tinker as she is scared of clicking unknown stuff.
+
 
 
 For answering after Action Questions:
 
-    * After scrolling, If the information is not present OR very difficult to process the information  , then it is a NO, as ABI is not that technically efficient
-    * After clicking on a link/button, you should take into consideration that she landed on the right page. If not, it is negative.
-    * Consider that ABI is not overwhelmed with too much information on a Page. A good amount of revelant information is okay and good for ABI. But If it is huge and not relevant, it is negative.
-    * Verify by reading the text that she will get all information. If not or partial information or just a over slight overview, It a negetive
+ * After scrolling, If the information is not present OR very difficult to process the information, then it is a NO, as ABI is not that technically efficient
+ * After clicking a link/button, you should consider that she landed on the right page. If not, it is negative.
+ * Consider that ABI is not overwhelmed with too much information on a Page. A good amount of relevant information is okay and good for ABI. But If it is enormous and not all relevant, it is negative.
+ * Verify by reading the text that she will get all the information. If not partial information, It is a negative
 
 Overall :
-    *Answer is negative/a No if ABI is not motivated to do the task/ difficult to find or do the task
-    *The answer is a MAYBE when there are some changes, ABI might do the thing, and when there are some changes too, that might refrain ABI from doing the task.
+ *Answer is negative/a No if ABI is not motivated to do the task/ difficult to find or do the task
+ *The answer is a "MAYBE" when there are some cases where ABI might do the thing, and there are some cases too, that might refrain ABI from doing the task.
 
 """
 
