@@ -1,4 +1,4 @@
-TAG = "DELHI"
+TAG="DELHI"
 gm_moments = {
     "scenario": "Find something to contribute to Jabref",
     "Subgoals": [
