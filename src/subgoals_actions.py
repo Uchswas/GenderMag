@@ -1,96 +1,84 @@
 from constant import BASE_IMAGE_PATH
 TYPE="SINGLE"
 
-
-
-TAG =  "KOLKATA"
-gm_moments =  {
-    "scenario": "Add information to the README",
+TAG ="ROME"
+gm_moments= {
+    "scenario": "File an issue to have a merge request template",
     "Subgoals": [
         {
-            "subgoal": "Find the README",
+            "subgoal": "Find information about how to file an issue",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "JabrefHomepage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "Flohomepage.png",
             "Actions": [
                 {
-                    "action": "Scroll down to read",
+                    "action": "Read the readme",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
+                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "Flohomepage.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
+                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "Flohomepage.png",
                     }
                 },
                 {
-                    "action": "Click on README.md",
+                    "action": "Click on the contribute.md",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Flohomepage.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefReadMe.png"
+                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "Flocontribute.png"
                     }
                 }
             ]
         },
         {
-            "subgoal": "Find out how to edit it",
+            "subgoal": "File the issue",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "JabrefReadMe.png",
+            "subgoal_page_image": BASE_IMAGE_PATH + "Flocontribute.png",
             "Actions": [
                 {
-                    "action": "Click the pencil button",
+                    "action": "Go to the list of issues",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefReadMe.png"
+                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "Flocontribute.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefAfterClicklingpencil.png"
+                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "MOCKIssueList.png"
                     }
                 },
                 {
-                    "action": "Edit the file",
+                    "action": "Click 'new issue'",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefAfterClicklingpencil.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "MOCKIssueList.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefAfterEdit.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloIssueCreate.png"
                     }
                 },
-            
                 {
-                    "action": "Click 'preview change'",
+                    "action": "Fill out the form and submit the issue",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefAfterEdit.png"
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "FloIssueCreate.png"
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefAfterclickingpreview.png"
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "FloAfterIsuueCreate.png"
                     }
-                },
-                # {
-                #     "action": "Click 'Propose File Change'",
-                #     "before_action": {
-                #         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                #         "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
-                #     },
-                #     "after_action": {
-                #         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                #         "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
-                #     }
-                # },
-
+                }
             ]
         }
     ]
 }
+
+
+
 
 def generate_strings(gm_moments):
     result = []

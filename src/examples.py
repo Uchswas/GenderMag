@@ -13,18 +13,11 @@ Learning Style: by Process vs. by Tinkering: When learning new technology, Abi l
 
         
 I will give you the subgoals and actions of a use case one by one, and you have to answer. Each question's output/answer format will be as follows: 
-Answer: YES or Maybe or NO. 
+Answer: YES or NO. 
 
 Facets: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
 
 Why: short justification of the answer and facets 
-
-
-
-
-
-
-Details of the image: Explain what you see in the picture and what is in the image
 
 """
 
@@ -38,7 +31,7 @@ For answering before Action Questions:
  * Scrolling down align with ABI's information processing style facets. So it is a Yes, though not explicitly mentioned on the page
  * Read all the text on the page to determine if the action information is mentioned, which might help ABI do the action or ABI might feel confident to do the action.
  * Sometimes, don't be optimistic or say a Yes from the action description because ABI is not explicitly instructed to do the action. It is more about - Whether will ABI do the action on the page now rather than doing/clicking other stuff.
- * Clicking anything without any information about what might be on the new page is tinkering, which doesn't align with ABI's facets. So, It is a negative 
+ * Clicking anything without any getting information about what might be on the new page is tinkering, which doesn't align with ABI's facets. So, It is a negative 
  * Some technical names/jargon/icons might be unknown to ABI as ABI's computer self-efficacy is not good. So, it is a negative
  * Take into consideration that ABI will not tinker as she is scared of clicking unknown stuff. So she will need clarification/information before clicking any button/link without any information on the page about what it could done. So it's a negative. If she needs to click on something for what, there is no indication on page of what might do it; she won't
 
@@ -52,9 +45,10 @@ For answering after Action Questions:
  * Verify by reading the text that she will get all the information. If it us partial information or just a overview, It is a negative. Because ABI's information Processing Style is comprehensive
 
 Overall :
+ * The answer Yes means she will do the task, there is no bug. No means she can't, so there is a bug.
  *Answer is negative/a No if ABI is not motivated to do the task/ difficult to find or do the task
- *The answer is a "NO" when there are some cases where ABI might do the thing, and there are some cases too, that might refrain ABI from doing the task. So if there is slight chance that ABI will not do the task, it is a negetive
-
+ *The answer is a "NO" when there are some cases where ABI might do the thing, and there are some cases too, that might refrain ABI from doing the task. So if there is slight chance that ABI will not do the task, the Answer is No
+ *Gender Inclusive Bugs sometimes can vary person to person, but from our defination, if some of the persons can feel it is not easy to do the task, then it is a bug. As there is bug, the answer is a NO. 
 """
 
 

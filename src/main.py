@@ -2,11 +2,13 @@ from openai import OpenAI
 from promptlayer import PromptLayer
 from dotenv import load_dotenv
 import os
+from openpyxl import Workbook, load_workbook
+
 from subgoals_actions import strings_to_iterate_over, TAG, TYPE
 from examples import starting_prompt
 import re
 import sys
-global count 
+responses = []
 
 parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(parent_directory)
@@ -76,23 +78,29 @@ def handle_user_input(user_input):
         })
     completion = create_chat_completion(messages, ["YesNoOnly", TAG, TYPE])
     assistant_reply = completion.choices[0].message.content
-    print(user_input)
-    print("\n\n")
-    print(assistant_reply)
-    print("\n\n")
-    print("\n\n")
-    print("\n\n")
+    responses.append(assistant_reply)
     messages.append({"role": "assistant", "content": assistant_reply})
     
 
 
 user_answer = input("Do you change the Tag in requesta and change the before question AND CHANGE THE HMTL TO PNG? If so, Press Y to proceed ")
 if user_answer == 'y' or user_answer == 'Y':
-    count = 1
-    for user_input in strings_to_iterate_over:
-        print(count)
-        handle_user_input(user_input)
-        count = count + 1
+    for i in range(1,6):
+        responses = []
+        messages = [
+        {"role": "system", "content": starting_prompt}
+        ]
+
+        for user_input in strings_to_iterate_over:
+            handle_user_input(user_input)
+        wb = Workbook()
+        ws = wb.active
+
+        for index, value in enumerate(responses, start=1):
+            ws.cell(row=index, column=1, value=value)
+        wb.save("../outputs/"+TAG+str(i)+'.xlsx')
+
+  
 else:
     print("Do it")
 

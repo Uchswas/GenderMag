@@ -2,3 +2,4 @@ promptlayer
 openai
 selenium
 pyppeteer
+openpyxl
