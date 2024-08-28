@@ -8,6 +8,7 @@ from subgoals_actions import strings_to_iterate_over, TAG, TYPE
 from examples import starting_prompt
 import re
 import sys
+import time
 responses = []
 
 parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -52,7 +53,7 @@ def create_chat_completion(messages, tags):
         model="gpt-4o",
         messages=messages,
         pl_tags=tags,
-        temperature = .7
+        temperature = 0
     )
     return response
 
@@ -83,22 +84,22 @@ def handle_user_input(user_input):
     
 
 
-user_answer = input("Do you change the Tag in requesta and change the before question AND CHANGE THE HMTL TO PNG? If so, Press Y to proceed ")
-if user_answer == 'y' or user_answer == 'Y':
-    for i in range(1,6):
-        responses = []
-        messages = [
-        {"role": "system", "content": starting_prompt}
-        ]
+for i in range(1,6):
+    responses = []
+    messages = [
+    {"role": "system", "content": starting_prompt}
+    ]
 
-        for user_input in strings_to_iterate_over:
-            handle_user_input(user_input)
-        wb = Workbook()
-        ws = wb.active
+    for user_input in strings_to_iterate_over:
+        handle_user_input(user_input)
+    wb = Workbook()
+    ws = wb.active
 
-        for index, value in enumerate(responses, start=1):
-            ws.cell(row=index, column=1, value=value)
-        wb.save("../outputs/"+TAG+str(i)+'.xlsx')
+    for index, value in enumerate(responses, start=1):
+        ws.cell(row=index, column=1, value=value)
+    wb.save("../outputs/"+TAG+str(i)+'.xlsx')
+
+    time.sleep(5)
 
   
 else:

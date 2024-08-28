@@ -34,7 +34,7 @@ def merge_files_with_same_prefix(directory, prefix):
     aggregated_df = pd.concat(dfs, axis=1)
     
     # Save the aggregated dataframe to a new file
-    output_file = os.path.join(directory, f'{prefix}_aggregated.xlsx')
+    output_file = os.path.join('../aggregated_output', f'{prefix}_aggregated.xlsx')
     aggregated_df.to_excel(output_file, index=False)
     
     return output_file

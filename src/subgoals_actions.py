@@ -1,7 +1,8 @@
 from constant import BASE_IMAGE_PATH
 TYPE="SINGLE"
 
-TAG ="ROME"
+#replace_text_here
+TAG="ROME"
 gm_moments= {
     "scenario": "File an issue to have a merge request template",
     "Subgoals": [
@@ -76,6 +77,7 @@ gm_moments= {
         }
     ]
 }
+
 
 
 
