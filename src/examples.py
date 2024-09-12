@@ -34,7 +34,7 @@ For answering before Action Questions:
  * Clicking anything without any getting information about what might be on the new page is tinkering, which doesn't align with ABI's facets. So, It is a negative 
  * Some technical names/jargon/icons might be unknown to ABI as ABI's computer self-efficacy is not good. So, it is a negative
  * Take into consideration that ABI will not tinker as she is scared of clicking unknown stuff. So she will need clarification/information before clicking any button/link without any information on the page about what it could done. So it's a negative. If she needs to click on something for what, there is no indication on page of what might do it; she won't
-
+ * ABI will click only when she might think it would help her to achieve the subgoal
 
 
 For answering after Action Questions:

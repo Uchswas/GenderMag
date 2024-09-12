@@ -53,7 +53,8 @@ def create_chat_completion(messages, tags):
         model="gpt-4o",
         messages=messages,
         pl_tags=tags,
-        temperature = 0
+        temperature = 0,
+        seed = 791
     )
     return response
 
@@ -99,7 +100,7 @@ for i in range(1,6):
         ws.cell(row=index, column=1, value=value)
     wb.save("../outputs/"+TAG+str(i)+'.xlsx')
 
-    time.sleep(5)
+    time.sleep()
 
   
 else:
