@@ -100,7 +100,7 @@ for i in range(1,6):
         ws.cell(row=index, column=1, value=value)
     wb.save("../outputs/"+TAG+str(i)+'.xlsx')
 
-    time.sleep()
+    time.sleep(5)
 
   
 else:
