@@ -1,64 +1,58 @@
-TAG="MIAMI"
+TAG="BAGHA"
 gm_moments = {
-    "scenario": "Abi wants to submit Assignment 7",
+    "scenario": "Abi has decided to submit a paper to ASE 2019 and doing all the pre-submission actions available on the website",
+    "persona" : "ABI",
     "Subgoals": [
         {
-            "subgoal": "Find assignment 7",
+            "subgoal": "Finding out what the conference is about",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
+            "subgoal_page_image": BASE_IMAGE_PATH+"ASE2019HomePage.png",
             "Actions": [
                 {
-                    "action": "Click on assignment 7 link under Coming up section (Before)",
+                    "action": "Accept cookie on bottom of screen",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
-                     
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019HomePageCookie.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
                     }
                 },
                 {
-                    "action": "Click on Github link (Before)",
+                    "action": "Scroll down to see what other information is here",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"AfterclickingGithub.png",
-                    }
-                }
-            ]
-        },
-        {
-            "subgoal": "Go to Gradescope to submit assignment",
-            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image" : BASE_IMAGE_PATH+"HomePage.png",
-            "Actions": [
-                {
-                    "action": "Click on assignment 7 link under Coming up section",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"HomePage.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
                     }
                 },
                 {
-                    "action": "Click on load assignment 7 for submission",
+                    "action": "Click on research papers in ASE 2019 tracks (box)",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"Assignment7.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019HomePage.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"Afterclickingload.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019ResearchPage.png",
                     }
-                }
+                },
+                {
+                    "action": "Click on call for papers",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"ASE2019ResearchPage.png",
+
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"ASE2019ResearchPageCall.png",
+                    }
+                },
             ]
         }
     ]

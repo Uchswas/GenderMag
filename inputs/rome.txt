@@ -1,4 +1,4 @@
-TAG ="ROME"
+TAG="ROME"
 gm_moments= {
     "scenario": "File an issue to have a merge request template",
     "Subgoals": [

@@ -1,4 +1,4 @@
-TAG = "DHAKA"
+TAG="DHAKA"
 gm_moments =  {
     "scenario": "Create a new issue",
     "Subgoals": [

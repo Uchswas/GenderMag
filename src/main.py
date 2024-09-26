@@ -54,7 +54,7 @@ def create_chat_completion(messages, tags):
         messages=messages,
         pl_tags=tags,
         temperature = 0,
-        seed = 791
+        seed = 0
     )
     return response
 
@@ -62,7 +62,7 @@ messages = [
     {"role": "system", "content": starting_prompt}
 ]
 
-def handle_user_input(user_input):
+def handle_user_input(user_input,i):
     image_link = find_links(user_input)
     print(image_link)
     messages.append({"role": "user", "content":[ {
@@ -78,21 +78,21 @@ def handle_user_input(user_input):
 
         ]
         })
-    completion = create_chat_completion(messages, ["YesNoOnly", TAG, TYPE])
+    completion = create_chat_completion(messages, ["YesNoOnly", TAG, TYPE,f"Iteration{i}"])
     assistant_reply = completion.choices[0].message.content
     responses.append(assistant_reply)
     messages.append({"role": "assistant", "content": assistant_reply})
     
 
 
-for i in range(1,6):
+for i in range(1,2):
     responses = []
     messages = [
     {"role": "system", "content": starting_prompt}
     ]
 
     for user_input in strings_to_iterate_over:
-        handle_user_input(user_input)
+        handle_user_input(user_input,i)
     wb = Workbook()
     ws = wb.active
 
@@ -100,7 +100,7 @@ for i in range(1,6):
         ws.cell(row=index, column=1, value=value)
     wb.save("../outputs/"+TAG+str(i)+'.xlsx')
 
-    time.sleep(5)
+    time.sleep(60)
 
   
 else:
