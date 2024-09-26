@@ -1,0 +1,158 @@
+import os
+import requests
+from pptx import Presentation
+from pptx.util import Inches, Pt  # Importing Pt for font size
+from pptx.dml.color import RGBColor  # For setting font color
+from  constant import BASE_IMAGE_PATH
+# Create a folder to store the downloaded images
+IMAGE_FOLDER = "downloaded_images"
+os.makedirs(IMAGE_FOLDER, exist_ok=True)
+
+# Create a new PowerPoint presentation
+prs = Presentation()
+
+# Function to download images
+def download_image(url, filename):
+    """Download image from the provided URL and save it to the local folder."""
+    response = requests.get(url)
+    if response.status_code == 200:
+        image_path = os.path.join(IMAGE_FOLDER, filename)
+        with open(image_path, 'wb') as f:
+            f.write(response.content)
+        return image_path
+    else:
+        raise Exception(f"Failed to download image: {url}")
+
+from pptx.util import Pt
+
+# Function to add a new slide
+def add_slide(prs, title, content, image_url, image_path=None):
+    """Add a slide with a title, content (question), image on the right, 'Answer' text on the left, and image URL above the image."""
+    slide_layout = prs.slide_layouts[5]  # Using blank slide layout
+    slide = prs.slides.add_slide(slide_layout)
+    
+    # Add title with controlled font size
+    title_box = slide.shapes.title
+    title_box.text = title
+    title_paragraph = title_box.text_frame.paragraphs[0]
+    title_paragraph.font.size = Pt(18)  # Control font size of the title (24pt)
+
+    # Add question (content) at the top with controlled font size (decreased)
+    left = Inches(0.5)
+    top = Inches(1)  # Adjusted top margin
+    width = Inches(8.5)
+    height = Inches(2)  # Increased height to allow multi-line content without overlap
+    content_box = slide.shapes.add_textbox(left, top, width, height)
+    content_frame = content_box.text_frame
+
+    # Clear any pre-existing content and add the new question with smaller font size
+    content_frame.clear()
+    p = content_frame.add_paragraph()
+    p.text = content
+    p.font.size = Pt(12)  # Decreased font size of the content (question) to 14pt
+
+    # Add 'Answer' text on the left side with adjusted height and width
+    answer_left = Inches(0.5)
+    answer_top = Inches(1.5)  # Increased the top position to avoid overlap with question
+    answer_width = Inches(3.5)  # Adjust width as necessary
+    answer_height = Inches(3)
+    answer_box = slide.shapes.add_textbox(answer_left, answer_top, answer_width, answer_height)
+    answer_frame = answer_box.text_frame
+    answer_paragraph = answer_frame.add_paragraph()
+    answer_paragraph.text = "Answer"
+    answer_paragraph.font.size = Pt(12)  # Control font size of the 'Answer' text (16pt)
+    answer_paragraph.font.bold = True
+
+    # Add clickable image URL above the image on the right side
+    text_left = Inches(5.5)  # Image and URL positioned on the right
+    text_top = Inches(1.5)   # URL above the image
+    text_width = Inches(4)   # Adjust width for the URL text area
+    text_height = Inches(0.5)
+    text_box = slide.shapes.add_textbox(text_left, text_top, text_width, text_height)
+    text_frame = text_box.text_frame
+
+    # Create a paragraph and set the hyperlink
+    p = text_frame.add_paragraph()
+    run = p.add_run()
+    run.text = "Click here to view the full image"
+    run.font.size = Pt(14)  # Control font size of the hyperlink text (14pt)
+    r = run.hyperlink
+    r.address = image_url  # Add the hyperlink
+
+    # Add image below the URL on the right side
+    if image_path:
+        img_left = Inches(5.5)  # Image positioned on the right
+        img_top = Inches(2.2)  # Positioned a bit lower to provide space between the link and the image
+        img_width = Inches(4)   # Adjust image width as necessary
+        slide.shapes.add_picture(image_path, img_left, img_top, width=img_width)
+
+# Function to add the intro slide
+def add_intro_slide(prs, tag_name, scenario_text):
+    """Add an introductory slide with the tag name as title and scenario text."""
+    slide_layout = prs.slide_layouts[0]  # Title slide layout
+    slide = prs.slides.add_slide(slide_layout)
+    
+    # Add title (TAG name) with default font size
+    title = slide.shapes.title
+    title.text = tag_name
+    
+    # Add scenario text
+    subtitle = slide.placeholders[1]
+    subtitle.text = scenario_text
+
+# Function to process walkthrough data
+def process_walkthrough(gm_moments, prs, tag):
+    """Process the walkthrough data and generate slides with images."""
+    scenario = gm_moments.get("scenario")
+    persona = gm_moments.get("persona")
+    
+    # Add the intro slide first
+    add_intro_slide(prs, tag, scenario)
+    
+    # Process each subgoal
+    subgoal_count = 1
+    for subgoal_data in gm_moments.get("Subgoals", []):
+        subgoal = subgoal_data.get("subgoal")
+        subgoal_question = subgoal_data.get("question")
+        subgoal_image_url = subgoal_data.get("subgoal_page_image")
+        
+        # Download subgoal image
+        subgoal_image_path = download_image(subgoal_image_url, os.path.basename(subgoal_image_url))
+        
+        # Add slide for subgoal
+        add_slide(prs, f"Subgoal {subgoal_count}: {subgoal}", subgoal_question, subgoal_image_url, subgoal_image_path)
+        
+        # Process each action
+        action_count = 1
+        for action_data in subgoal_data.get("Actions", []):
+            action = action_data.get("action")
+            
+            # Before Action slide
+            before_action = action_data.get("before_action")
+            before_question = before_action.get("question")
+            before_image_url = before_action.get("page_image_on_which_abi_take_the_action")
+            
+            # Download before action image
+            before_image_path = download_image(before_image_url, os.path.basename(before_image_url))
+            add_slide(prs, f"Action {action_count}: {action}(Before)", before_question, before_image_url, before_image_path)
+            
+            # After Action slide
+            after_action = action_data.get("after_action")
+            after_question = after_action.get("question")
+            after_image_url = after_action.get("page_image_on_which_abi_is_after_the_action")
+            
+            # Download after action image
+            after_image_path = download_image(after_image_url, os.path.basename(after_image_url))
+            add_slide(prs, f"Action {action_count}: {action}(After)", after_question, after_image_url, after_image_path)
+            action_count += 1
+        subgoal_count += 1
+
+#replace_text_here
+        
+# Process the walkthrough and add slides
+process_walkthrough(gm_moments, prs, tag=TAG)
+
+# Save the PowerPoint file
+prs.save(f'../ppts/{TAG}.pptx')
+
+print(f"Presentation generated successfully as '{TAG}.pptx'")

@@ -1,6 +1,6 @@
 TAG="CHENNAI"
 gm_moments =  {
-    "scenario": "Find an issue to solve",
+    "scenario": "Find an issue to solve appropriate for new comer",
     "Subgoals": [
         {
             "subgoal": "Find the list of issues",

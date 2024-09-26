@@ -54,7 +54,6 @@ def create_chat_completion(messages, tags):
         messages=messages,
         pl_tags=tags,
         temperature = 0,
-        seed = 0
     )
     return response
 
@@ -85,7 +84,7 @@ def handle_user_input(user_input,i):
     
 
 
-for i in range(1,2):
+for i in range(2,6):
     responses = []
     messages = [
     {"role": "system", "content": starting_prompt}
@@ -100,7 +99,7 @@ for i in range(1,2):
         ws.cell(row=index, column=1, value=value)
     wb.save("../outputs/"+TAG+str(i)+'.xlsx')
 
-    time.sleep(60)
+    time.sleep(6)
 
   
 else:

@@ -3,6 +3,7 @@ TYPE="SINGLE"
 
 #replace_text_here
 
+
 def generate_strings(gm_moments):
     result = []
     scenario = gm_moments["scenario"]
