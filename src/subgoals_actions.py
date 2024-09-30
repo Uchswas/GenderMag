@@ -1,74 +1,8 @@
 from constant import BASE_IMAGE_PATH
 TYPE="SINGLE"
 
-TAG="DHAKA"
-gm_moments =  {
-    "scenario": "Create a new issue",
-    "Subgoals": [
-        {
-            "subgoal": "Find issue tracker",
-            "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image": BASE_IMAGE_PATH + "JabrefHomepage.png",
-            "Actions": [
-                {
-                    "action": "Click on 'Issues' link",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefHomepage.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefIssueList.png"
-                    }
-                },
-                {
-                    "action": "Click the 'New Issue' button",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefIssueList.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefIsuueGetStarted.png"
-                    }
-                },
-                {
-                    "action": "Click the button 'Get Started' for 'Bug Report'",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "JabrefIsuueGetStarted.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "Jabrefbugreportform.png"
-                    }
-                },
-                {
-                    "action": "Fill out the Bug Report form",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "Jabrefbugreportform.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action":  BASE_IMAGE_PATH + "JabrefBugReportFill.png"
-                    }
-                },
-                {
-                    "action": "Click the button 'create issue'",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "JabrefBugReportFill.png"
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "JabrefBugsubmit.png"
-                    }
-                }
-            ]
-        }
-    ]
-}
+#replace_text_here
+
 
 def generate_strings(gm_moments):
     result = []
