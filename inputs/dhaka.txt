@@ -52,7 +52,7 @@ gm_moments =  {
                     }
                 },
                 {
-                    "action": "Click the button 'Submit new issue'",
+                    "action": "Click the button 'Careta issue'",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
                         "page_image_on_which_abi_take_the_action":  BASE_IMAGE_PATH + "JabrefBugReportFill.png"
