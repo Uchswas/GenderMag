@@ -84,7 +84,7 @@ def handle_user_input(user_input,i):
     
 
 
-for i in range(2,6):
+for i in range(1,6):
     responses = []
     messages = [
     {"role": "system", "content": starting_prompt}
