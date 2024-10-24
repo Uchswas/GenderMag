@@ -13,11 +13,11 @@ None of the above : If there are additional reasons, aside from the facets, that
         
 I will give you the subgoals and actions of a use case one by one, and you have to answer.
 Each question's output/answer format will be as follows: 
+
 Answer: YES or NO 
-
 Facets: List facets responsible for the answer, i.e., items among  1.Motivations 2.Information Processing Style 3. Attitude Towards Risk 4.Computer Self-Efficacy 5.Learning Style 6.None of the Above 
+Why: short justification of the answer 
 
-Why: short justification of the answer and facets 
 
 """
 
@@ -43,7 +43,6 @@ Overall :
     * The answer Yes means she is motivated do the task.
     * Answer is negative/No if ABI is not motivated or struggle to do the task or  difficult to find it to do the task
     * When evaluating a subgoal or action question for ABI, there may be scenarios where ABI could potentially complete the task for certain reasons but might fail for other reasons. In such cases, where there’s a significant chance of failure due to conflicting factors, the appropriate answer is a NO—reflecting that the task is unlikely to be successful despite possible motivation.
-  
  """
 
 
