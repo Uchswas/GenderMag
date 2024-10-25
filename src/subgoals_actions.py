@@ -1,67 +1,105 @@
 from constant import BASE_IMAGE_PATH
 TYPE="SINGLE"
 
-TAG="CAROLINA"
-
+#replace_text_here
+TAG="MYRTLE"
 gm_moments = {
-    "scenario": "Abi is physically at ICSE 2019 and is planning which sessions to go to. (It’s Tuesday night in her hotel room.)",
+    "scenario": "Abi is a second author to a paper accepted to POPL. So doesn't have to go to POPL2019, but she is deciding whether she should go to the conference.",
     "persona" : "ABI",
     "Subgoals": [
         {
-            "subgoal": "What sessions I should go to tomorrow",
+            "subgoal": "Find out what is being presented at the conference",
             "question": "Will Abi have formed this sub-goal as a step to their overall goal?",
-            "subgoal_page_image" : BASE_IMAGE_PATH + "ICSE2019Home.png",
+            "answers": "Yes",
+            "subgoal_page_image" :  BASE_IMAGE_PATH+"POPL2029HomePage.png",
             "Actions": [
                 {
-                    "action": "Click on the program menu item",
+                    "action": "Scroll down to POPL 2019",
                     "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Home.png",
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019HomeEX.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
+             
                     }
                 },
                 {
-                    "action": "Click at complete program",
+                    "action": "She is going to scroll down",
                     "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019HomeEX.png",
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
+                
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019Complete.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
+        
+                    }
+                },
+                {
+                    "action": "Click on Program of POPL 2019 Link",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                    }
+                },
+                {
+                    "action": "Scroll down",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                    }
+                },
+                {
+                    "action": "Click on the distinguished paper",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019DistinAfter.png",
+                    }
+                },
+                {
+                    "action": "Explore the program: Go back to the main page to check tutorial",
+                    "before_action": {
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019DistinAfter.png",
+
+                    },
+                    "after_action": {
+                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
 
                     }
                 },
                 {
-                    "action": "Click on session timeline",
+                    "action": "Click on one of the tutorialfest link",
                     "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019Complete.png",
+                        "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
+
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019TimeLine.png",
-                    }
-                },
-                {
-                    "action": "Click on the tutorial(R for software Engineering Research)",
-                    "before_action": {
-                        "question": "Will ABI know what to do at this step? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH + "ICSE2019TimeLine.png",
-                    },
-                    "after_action": {
-                        "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "ICSE2019TutorialEx.jpg",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH + "POPL2018Tutorial.png",
                     }
                 }
             ]
         }
     ]
 }
-
 
 def generate_strings(gm_moments):
     result = []

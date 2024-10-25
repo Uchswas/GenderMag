@@ -29,51 +29,8 @@ def find_links(text):
     urls = url_pattern.findall(text)
     return urls[0] if urls else None
 
-def create_chat_completion(image_media_type, image_data, user_text, tags):
-    # Prepare the message structure for the API call
-    message = client.messages.create(
-        model="claude-3-5-sonnet-20241022",
-        max_tokens=1024,
-        messages=[
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "image",
-                        "source": {
-                            "type": "base64",
-                            "media_type": image_media_type,
-                            "data": image_data,
-                        },
-                    },
-                    {
-                        "type": "text",
-                        "text": user_text,
-                    },
-                ],
-            }
-        ],
-    )
-    return message
 
-def handle_user_input(user_input, i):
-    # Extract image URL from the user input
-    image_link = find_links(user_input)
-    print(f"Image link: {image_link}")
 
-    # Load the image as base64
-    image_data, image_media_type = load_image_as_base64(image_link)
-
-    # Create the user message and call the API
-    completion = create_chat_completion(
-        image_media_type, image_data, user_input, [TAG, TYPE, f"Iteration{i}"]
-    )
-
-    # Extract and store the assistant's reply
-    print(completion.content[0].text)
-    assistant_reply = completion.content[0].text
-    responses.append(assistant_reply)
-    print(f"Assistant reply: {assistant_reply}")
 
 def save_responses_to_excel(responses, iteration):
     # Save the responses to an Excel file
@@ -87,11 +44,67 @@ def save_responses_to_excel(responses, iteration):
     wb.save(output_path)
     print(f"Responses saved to {output_path}")
 
-responses = []
 
+
+
+def create_chat_completion(messages):
+    # Prepare the message structure for the API call
+    message = client.messages.create(
+        model="claude-3-5-sonnet-20241022",
+        max_tokens=1000,
+        temperature = 0,
+        system=starting_prompt,
+        messages=messages,  # Use the cumulative messages
+    )
+    return message
+
+def handle_user_input(user_input, i):
+    # Extract image URL from the user input
+    image_link = find_links(user_input)
+    print(f"Image link: {image_link}")
+
+    # Load the image as base64
+    image_data, image_media_type = load_image_as_base64(image_link)
+
+    # Append the new user input into the cumulative messages
+    messages.append({
+        "role": "user",
+        "content": [
+            {
+                "type": "image",
+                "source": {
+                    "type": "base64",
+                    "media_type": image_media_type,
+                    "data": image_data,
+                },
+            },
+            {
+                "type": "text",
+                "text": user_input,
+            },
+        ],
+    })
+
+    # Call the API with the cumulative conversation
+    completion = create_chat_completion(messages)
+
+    # Extract and store the assistant's reply
+    assistant_reply = completion.content[0].text
+
+    # Append the assistant's reply to the cumulative messages
+    messages.append({
+        "role": "assistant",
+        "content": [{"type": "text", "text": assistant_reply}],
+    })
+
+    responses.append(assistant_reply)
+
+# Initialize messages as an empty list at the start
+messages = []
+responses = []
 for i in range(1, 2):
     responses = []  # Reset responses for each iteration
-
+    messages = []
     for user_input in strings_to_iterate_over:
         try:
             handle_user_input(user_input, i)
