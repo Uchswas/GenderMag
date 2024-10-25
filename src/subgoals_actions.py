@@ -42,29 +42,29 @@ gm_moments = {
                     "action": "Click on Program of POPL 2019 Link",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2029HomePage.jpg",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.jpg",
                     }
                 },
                 {
                     "action": "Scroll down",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.jpg",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
-                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                        "page_image_on_which_abi_is_after_the_action": BASE_IMAGE_PATH+"POPL2019Distin.jpg",
                     }
                 },
                 {
                     "action": "Click on the distinguished paper",
                     "before_action": {
                         "question": "Will ABI know what to do at this step and is the page good enough for abi to take this action? Why?",
-                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.png",
+                        "page_image_on_which_abi_take_the_action": BASE_IMAGE_PATH+"POPL2019Distin.jpg",
                     },
                     "after_action": {
                         "question": "If Abi does the right thing, will s/he know that s/he did the right thing and is making progress toward their goal? Why?",
@@ -100,6 +100,7 @@ gm_moments = {
         }
     ]
 }
+
 
 def generate_strings(gm_moments):
     result = []
