@@ -84,7 +84,7 @@ def handle_user_input(user_input,i):
     
 
 
-for i in range(2,6):
+for i in range(1,6):
     responses = []
     messages = [
     {"role": "system", "content": starting_prompt}
@@ -98,6 +98,7 @@ for i in range(2,6):
     for index, value in enumerate(responses, start=1):
         ws.cell(row=index, column=1, value=value)
     wb.save("../outputs/"+TAG+str(i)+'.xlsx')
+    print("../outputs/"+TAG+str(i)+'.xlsx')
 
     time.sleep(6)
 
