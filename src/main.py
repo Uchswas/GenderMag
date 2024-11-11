@@ -102,7 +102,7 @@ def handle_user_input(user_input, i):
 # Initialize messages as an empty list at the start
 messages = []
 responses = []
-for i in range(1, 2):
+for i in range(1, 6):
     responses = []  # Reset responses for each iteration
     messages = []
     for user_input in strings_to_iterate_over:
