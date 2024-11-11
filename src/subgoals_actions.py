@@ -63,7 +63,6 @@ gm_moments = {
     ]
 }
 
-
 def generate_strings(gm_moments):
     result = []
     scenario = gm_moments["scenario"]
